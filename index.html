@@ -10,25 +10,11 @@
     <title>Manual dos Bixos</title>
 </head>
 <body>
-    <h1>OLÁ BIXO, SEJA BEM VINDX!</h1>
+    <h1>OLÁ BIX<span id="dinamico">O</span>, SEJA BEM VINDX!
+    </h1>
     <img src="logos/logomanual.png" alt="Logo Manual dos Bixos. Edição dois mil e vinte e seis (2k26)">
     <div class="anima" id="anima"></div>
     <button id="btnIniciar">ABRIR MANUAL</button>
-    <script>
-        const botao = document.getElementById("btnIniciar");
-        const anima = document.getElementById("anima");
-
-        botao.addEventListener("click", () => {
-            anima.classList.add("ativo");
-        });
-
-        // Escuta o fim da transição
-        anima.addEventListener("transitionend", (event) => {
-        if (event.propertyName === "transform") {
-            // Troca de tela
-            window.location.href = "outra-pagina.html";
-        }
-        });
-    </script>
+    <script src="index_script.js"></script>
 </body>
 </html>
