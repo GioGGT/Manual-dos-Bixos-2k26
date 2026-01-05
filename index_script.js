@@ -10,8 +10,13 @@ botao.addEventListener("click", () => {
 anima.addEventListener("transitionend", (event) => {
 if (event.propertyName === "transform") {
     // Troca de tela
-    window.location.href = "outra-pagina.html";
+    window.location.href = "paginas/introducao.html";
     }
+});
+
+// RESET quando a página for exibida novamente
+window.addEventListener("pageshow", () => {
+    anima.classList.remove("ativo");
 });
 
 /*-- Animação Texto --*/
