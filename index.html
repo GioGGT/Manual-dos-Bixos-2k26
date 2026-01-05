@@ -6,68 +6,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="index_config.css">
     <title>Manual dos Bixos</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
-
-        html, body{
-            padding: 0;
-            margin: 0;
-        }
-
-        body{
-            background-color: #F7F4E9;
-            min-height: 100dvh;
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            flex-direction: column;
-        }
-
-        h1{
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
-            color: #CB6CE6;
-            font-family: Boogaloo;
-            letter-spacing: 0.1em; 
-            margin: 0;
-        }
-
-        button{
-            font-family: Boogaloo;
-            letter-spacing: 0.1em; 
-            color: white;
-            background: linear-gradient(to right, #CB6CE6 0%, #713C80 100%);
-            font-size: 17px;
-            padding: 10px;
-            box-shadow: -4px 4px 4px 0px #A29DAD;
-            border-radius: 25px;
-            border: none;
-            width: 200px;
-        }
-
-        button:hover{
-            font-size: 18px;
-            transition: 0.25s;
-            color: #ffde59;
-        }
-
-        img{
-            width: clamp(300px, 50vw, 400px);
-            height: auto;
-        }
-
-        @media (max-height: 500px) {
-            
-        body {
-            padding: 20px;
-        }
-    }
-
-    </style>
 </head>
 <body>
     <h1>OLÁ BIXO, SEJA BEM VINDX!</h1>
     <img src="logos/logomanual.png" alt="Logo Manual dos Bixos. Edição dois mil e vinte e seis (2k26)">
-    <button>ABRIR MANUAL</button>
+    <div class="anima" id="anima"></div>
+    <button id="btnIniciar">ABRIR MANUAL</button>
+    <script>
+        const botao = document.getElementById("btnIniciar");
+        const anima = document.getElementById("anima");
+
+        botao.addEventListener("click", () => {
+            anima.classList.add("ativo");
+        });
+
+        // Escuta o fim da transição
+        anima.addEventListener("transitionend", (event) => {
+        if (event.propertyName === "transform") {
+            // Troca de tela
+            window.location.href = "outra-pagina.html";
+        }
+        });
+    </script>
 </body>
 </html>

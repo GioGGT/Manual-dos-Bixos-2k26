@@ -1,0 +1,79 @@
+/*-- Imports --*/
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap'); 
+
+/*-- Corpo do Site --*/
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: #F7F4E9;
+            min-height: 100dvh;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-direction: column;
+        }
+
+/*-- Fontes e Texto --*/
+        h1{
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            color: #CB6CE6;
+            font-family: Boogaloo;
+            letter-spacing: 0.1em; 
+            margin: 0;
+        }
+
+
+/*-- Button --*/
+        button{
+            font-family: Boogaloo;
+            letter-spacing: 0.1em; 
+            color: white;
+            background: linear-gradient(to right, #CB6CE6 0%, #713C80 100%);
+            font-size: 17px;
+            padding: 10px;
+            box-shadow: -4px 4px 4px 0px #A29DAD;
+            border-radius: 25px;
+            border: none;
+            width: 200px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            font-size: 18px;
+            transition: 0.25s;
+            color: #ffde59;
+        }
+
+/*-- Logo --*/
+        img{
+            width: clamp(300px, 50vw, 400px);
+            height: auto;
+        }
+
+/*-- Animação --*/
+        .anima{
+                position: fixed;
+                width: 100px;
+                height: 100px;
+                background: white;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                transition: transform 0.8s ease-in-out;
+                z-index: 1;
+        }
+
+        .anima.ativo {
+            transform: translate(-50%, -50%) scale(20);
+        }
+/*-- Ajustes Mobile --*/
+        @media (max-height: 500px) {
+            
+        body {
+            padding: 20px;
+        }
+    }
