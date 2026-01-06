@@ -1,0 +1,96 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Boogaloo&display=swap');
+
+header {
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+header img {
+    max-height: 60px;
+    width: auto;
+}
+
+.link-img{
+    margin: 15px auto 15px 15px;
+}
+
+/* Menu */
+
+.links {
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+    background: linear-gradient(135deg, #FFDE59 0%, #F7F4E9 70%);
+
+    transition: 0.75s ease-out;
+}
+
+.link-header {
+    font-family: Andika;
+    width: 100%;
+    color: #CB6CE6;
+    text-decoration: none;
+    box-sizing: border-box;
+    height: auto;
+    padding: 7px 20px;
+    justify-content: flex-start;
+    transition: 0.3s;
+}
+
+header svg {
+    fill: #CB6CE6;
+}
+
+header svg:hover {
+    cursor: pointer;
+}
+
+#barralateral-active {
+    display: none;
+}
+
+.open,
+.close {
+    padding: 20px;
+    display: block;
+}
+
+#barralateral-active:checked~.links {
+    right: 0;
+}
+
+#barralateral-active:checked~#overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* Hover <a> */
+
+.link-header:hover {
+    background-color: #CB6CE6;
+    color: #FFDE59;
+    box-shadow: 0px 0px 10px 5px #cc6ce66f;
+}
+
+
+@media (max-width: 780px) {
+
+    header img {
+        max-height: 40px;
+    }
+}
