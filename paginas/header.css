@@ -96,4 +96,8 @@ header svg:hover {
     header img {
         max-height: 40px;
     }
+
+    .links{
+        height: 100svh; /*apagar se der errado*/
+    }
 }
