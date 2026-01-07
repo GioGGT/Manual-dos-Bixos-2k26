@@ -33,6 +33,9 @@ header img {
     width: 300px;
     background: linear-gradient(135deg, #FFDE59 0%, #F7F4E9 70%);
 
+    overflow-y: auto; /* Permite rolagem vertical */
+    overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
+    -webkit-overflow-scrolling: touch; /* Suaviza rolagem no mobile */
     transition: 0.75s ease-out;
 }
 

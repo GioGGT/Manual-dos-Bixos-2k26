@@ -10,7 +10,7 @@ botao.addEventListener("click", () => {
 anima.addEventListener("transitionend", (event) => {
 if (event.propertyName === "transform") {
     // Troca de tela
-    window.location.href = "paginas/introducao.html";
+    window.location.href = "paginas/home.html";
     }
 });
 
