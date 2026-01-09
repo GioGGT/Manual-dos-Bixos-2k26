@@ -1,0 +1,505 @@
+/*-- Imports --*/
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Gluten:wght@100..900&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap');
+
+/*
+FONTES
+Para títulos --> Boogaloo / Audiowide
+Para parágrafos --> Andika 
+
+CORES
+#e9db1a (amarelo vibrante)
+#F7F4E9 (bege)
+#CB6CE6 (roxo) 
+#9E7AA8 (lilás)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #020202 0%, #0a0a0a 50%, #1a1a1a 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 20px;
+    position: relative;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(233, 219, 26, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.left_sec {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 60px;
+    gap: 40px;
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.left_sec h1 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: #e9db1a;
+    border-bottom: 3px solid #e9db1a;
+    padding-bottom: 15px;
+    text-shadow: 0 0 20px rgba(233, 219, 26, 0.3),
+        0 0 40px rgba(233, 219, 26, 0.2);
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.left_sec h1::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #000000, #e9db1a);
+    transition: width 0.4s ease;
+}
+
+.left_sec h1:hover::after {
+    width: 100%;
+}
+
+.left_sec h2 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, #e9db1a 0%, #ffed4e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(233, 219, 26, 0.2);
+    letter-spacing: 1px;
+}
+
+.left_sec p {
+    font-family: 'Andika', sans-serif;
+    font-size: 1.25rem;
+    color: #F7F4E9;
+    text-align: justify;
+    line-height: 1.8;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-left: 4px solid #e9db1a;
+    background: linear-gradient(90deg, rgba(233, 219, 26, 0.05) 0%, transparent 100%);
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+
+.right_sec {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 40px;
+    animation: fadeInRight 0.8s ease-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.right_sec img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(233, 219, 26, 0.2),
+        0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+    border: 2px solid rgba(233, 219, 26, 0.3);
+    position: relative;
+}
+
+.right_sec img:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 30px 80px rgba(233, 219, 26, 0.3),
+        0 15px 40px rgba(0, 0, 0, 0.5);
+    border-color: #e9db1a;
+}
+
+.Tradições {
+    padding: 60px;
+    width: 100%;
+    background-color: #e9db1a;
+    color: black;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0 10px 30px rgba(233, 219, 26, 0.2),
+        0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.container_tradições {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.role {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    overflow: hidden;
+}
+
+.roleL {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex: 60%;
+    gap: 30px;
+    text-align: justify;
+}
+
+.roleL h1 {
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.roleL p {
+    color: #ddd;
+    font-family: 'Andika', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.roleR {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    flex: 40%;
+}
+
+.roleR img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #e9db1a;
+    box-shadow: 0 0 15px rgba(233, 219, 26, 0.3);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.roleR img:hover {
+    border-color: #ffed4e;
+    box-shadow: 0 0 20px rgba(233, 219, 26, 0.5);
+
+}
+
+.energia {
+    padding: 80px;
+    gap: 30px;
+    background-image: url(../imgs/elo/raios.gif);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: brightness(0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+}
+
+.energia h1 {
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.energia p {
+    color: #ffffff;
+    font-family: 'Andika', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.atelie {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    overflow: hidden;
+}
+
+.atelieR {
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex: 50%;
+    gap: 30px;
+    text-align: justify;
+}
+
+.atelieR h1 {
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.atelieR p {
+    color: #ddd;
+    font-family: 'Andika', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.atelieL {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    flex: 50%;
+}
+
+.atelieL img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #e9db1a;
+    box-shadow: 0 0 15px rgba(233, 219, 26, 0.3);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.atelieL img:hover {
+    border-color: #ffed4e;
+    box-shadow: 0 0 20px rgba(233, 219, 26, 0.5);
+
+}
+
+.projetos {
+    padding: 70px;
+    width: 100%;
+    background-color: #f8df00;
+    color: #000000;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.projetos h1 {
+    border-bottom: 3px solid #000000;
+}
+
+.projetos img {
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 90px;
+}
+
+.main_professores {
+    padding: 60px 20px;
+    background: #0a0a0a;
+    width: 100%;
+}
+
+.main_professores h1 {
+    text-align: center;
+    color: #e9db1a;
+    font-family: "Audiowide", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.main_professores h3 {
+    text-align: center;
+    color: #F7F4E9;
+    font-family: 'Andika', sans-serif;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-weight: 400;
+}
+
+
+.professores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.professor {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(233, 219, 26, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+   gap: 30px
+}
+
+.professor:hover {
+    transform: translateY(-10px);
+    border-color: #e9db1a;
+    box-shadow: 0 10px 30px rgba(233, 219, 26, 0.1);
+}
+
+
+.professor img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 4px solid #e9db1a;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(233, 219, 26, 0.3);
+}
+
+.professor h2 {
+    font-family: "Audiowide", sans-serif;
+    color: #e9db1a;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.professor p {
+    font-family: 'Andika', sans-serif;
+    color: #F7F4E9;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.inter {
+    padding: 60px;
+    gap: 50px;
+    width: 100%;
+    height: 70vh;
+    background-image: url(../imgs/elo/raio.gif);
+    background-size: contain;
+    background-position: center;
+    backdrop-filter: brightness(0.3);
+    color: rgb(255, 255, 255);
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-size: 1.5rem;
+    box-shadow: 0 10px 30px rgba(233, 219, 26, 0.2),
+        0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.inter h1 {
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.inter img {
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsividade: 1 por linha em telas pequenas */
+@media (max-width: 900px) {
+    .professores {
+        grid-template-columns: 1fr;
+    }
+}
