@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="header.css">
+    <title>Luta Estudantil</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        html,
+        body {
+            position: relative;
+            padding: 0;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.829);
+            z-index: -1;
+        }
+
+        header {
+            background-color: transparent;
+        }
+
+        section img {
+            width: 40%;
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+
+        #seta-link {
+            margin-left: auto;
+        }
+
+        #seta {
+            fill: #ffde59;
+            height: 60px;
+            width: 60px;
+            z-index: 2;
+        }
+
+        #seta:hover {
+            cursor: pointer;
+            transition: 0.3s ease;
+            height: 63px;
+            width: 63px;
+        }
+
+        main {
+            padding: 0px 100px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            gap: 40px;
+        }
+
+        h1 {
+            color: #ffde59;
+            font-family: Boogaloo;
+            font-size: clamp(1.7rem, 5vw, 2.7rem);
+            margin-bottom: 10px;
+            letter-spacing: 0.1rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-family: Andika;
+            font-size: clamp(0.8rem, 2vw, 1.6rem);
+            color: #9E7AA8;
+            text-align: justify;
+            padding: 0px 30px 0px 30px;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: -7px 7px 0px 0px #ffde59;
+            border: 2px solid #000000;
+
+        }
+
+        #final {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            display: none;
+
+        }
+
+        #video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        #video-protesto {
+            width: 40%;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 780px) {
+
+            section img {
+                width: 100%;
+                margin-bottom: 10px;
+
+            }
+
+            #final {
+                margin-top: -70px;
+                display: flex;
+            }
+
+            section {
+                flex-direction: column;
+            }
+
+            p {
+                padding: 0;
+            }
+
+            main {
+                padding: 0px 50px;
+            }
+
+            body::before {
+                background: rgba(0, 0, 0, 0.443);
+            }
+
+            #video-protesto,
+            #arte {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="video-bg">
+        <source src="imgs/luta-estudantil/umes.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+    </video>
+    <header>
+        <a href="home.html" class="link-img"><img src="../logos/logoheader.png"></a>
+        <input type="checkbox" id="barralateral-active">
+        <label for="barralateral-active" class="open">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </label>
+        <label for="barralateral-active" id="overlay"></label>
+        <div class="links">
+            <label for="barralateral-active" class="open">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#1f1f1f">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
+
+            <a href="home.html" class="link-header">Home</a>
+            <a href="apelidos.html" class="link-header">Apelidos</a>
+            <a href="apm.html" class="link-header">APM</a>
+            <a href="eventos.html" class="link-header">Eventos</a>
+            <a href="rodas.html" class="link-header">Rodas</a>
+            <a href="gremio.html" class="link-header">Grêmio</a>
+            <a href="esportes.html" class="link-header">Esportes</a>
+            <a href="luta.html" class="link-header">Luta Estudantil</a>
+            <a href="viagens.html" class="link-header">Viagens</a>
+            <a href="arte.html" class="link-header">Música & Arte</a>
+            <a href="correio.html" class="link-header">Correio Elegante</a>
+            <a href="cursos.html" class="link-header">Cursos</a>
+            <a href="redes.html" class="link-header">Redes & NSA</a>
+            <a href="mapa.html" class="link-header">Mapa do Câmpus</a>
+            <a href="créditos.html" class="link-header">Créditos</a>
+            <a href="../index.html" class="link-header">Fechar Manual</a>
+        </div>
+    </header>
+
+    <h1>LUTA ESTUDANTIL</h1>
+    <main>
+        <section>
+            <img src="imgs/luta-estudantil/luta-intro.png" id="intro">
+            <p>O movimento estudantil é fundamental para garantir direitos, melhorar a qualidade do ensino e
+                fortalecer a voz
+                dos
+                estudantes dentro da escola e da sociedade. Por meio da organização e da mobilização, os alunos
+                conquistam
+                avanços importantes, como melhores condições de estudo, participação nas decisões e acesso a políticas
+                educacionais.</p>
+        </section>
+        <section>
+            <img src="imgs/luta-estudantil/L2.png">
+            <p>
+                Na ETESP não é diferente: buscamos mais direitos, ensino de qualidade, vida melhor e
+                um Brasil melhor, porque somos o futuro do país. Muitos ainda desconhecem o poder desse
+                movimento, mas graças a ele hoje temos a merenda escolar.
+            </p>
+        </section>
+        <section>
+            <video id="video-protesto" controls playsinline>
+                <source src="imgs/luta-estudantil/video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo HTML5.
+            </video>
+            <p>
+                Em 2016 a ETESP foi ocupada pelos próprios estudantes para garantir a merenda; durante a
+                ocupação, escreveram no refeitório (onde hoje fica a biblioteca) a frase “Só a Luta Muda a Vida”.
+            </p>
+        </section>
+        <section>
+            <img src="imgs/luta-estudantil/L3.png">
+            <p>
+                Em 2024 a arte foi refeita, mantendo viva a memória da conquista.
+            </p>
+        </section>
+        <section>
+            <img src="imgs/luta-estudantil/L4.png">
+            <p>
+                Em 2019 a escola se mobilizou novamente, agora contra a reforma da previdência e os cortes na
+                verba da educação, reforçando seu papel de símbolo de luta. Todo ano, no dia 11 de agosto,
+                celebramos o Dia do Estudante, quando milhares vão às ruas reivindicar direitos e celebrar
+                conquistas.
+            </p>
+        </section>
+        <section>
+            <img src="imgs/luta-estudantil/L5.png">
+            <p>
+                Nada do que existe na ETESP caiu do céu; tudo foi conquistado por quem não se intimidou. O
+                Grêmio Estudantil nasceu dessa mesma força e continua ampliando a voz dos alunos. A luta é
+                simples: alunos unidos mudam a escola. Ela não é só passado nem obrigação de quem já está aqui;
+                começa quando você participa, opina e se envolve.
+            </p>
+        </section>
+        <section>
+            <img src="imgs/luta-estudantil/L6.png">
+            <p>
+                A ETESP que você vai viver ainda está sendo construída e precisa de você. Seja nas atividades, nas
+                mobilizações, nos projetos ou nas decisões, há espaço. Não fique só assistindo: ocupa, participa,
+                constrói. A luta estudantil te chama. Você vem? ✊
+            </p>
+        </section>
+        <a id="seta-link" href="viagens.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                id="seta">
+                <path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" />
+            </svg></a>
+    </main>
+    <img src="imgs/luta-estudantil/final-lutas.png" id="final">
+</body>
+
+</html>
