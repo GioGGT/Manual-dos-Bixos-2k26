@@ -1,59 +1,303 @@
-/*-- Imports --*/
-@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Boogaloo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Gluten:wght@100..900&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap');
+        /*-- Imports --*/
+        @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Boogaloo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Gluten:wght@100..900&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap');
 
-/*
-FONTES
-Para títulos --> Boogaloo / Audiowide
-Para parágrafos --> Andika 
+        /*
+        FONTES
+        Para títulos --> Boogaloo / Audiowide
+        Para parágrafos --> Andika 
 
-CORES
-#e9db1a (amarelo vibrante)
-#F7F4E9 (bege)
-#CB6CE6 (roxo) 
-#9E7AA8 (lilás)
-*/
-* {
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
-}
+        CORES
+        #e9db1a (amarelo vibrante)
+        #F7F4E9 (bege)
+        #CB6CE6 (roxo) 
+        #9E7AA8 (lilás)
+        */
 
-body {
-    min-height: 100vh;
-    overflow-x: hidden;
-}
+        @font-face {
+            font-family: 'gliker';
+            src: url('../fonts/gliker-regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.main_section {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background: linear-gradient(
-    to bottom, 
-    #d15433 0%,    /* Laranja do topo */
-    #a8442d 30%,   /* Transição ferrugem */
-    #632b4b 70%,   /* Roxo médio */
-    #3b1b36 100%   /* Roxo escuro da base */
-);
-    position: relative;
-}
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
 
-.main_div{
-    width: 70%;
-    height: 70%;
-    background-image: url(../imgs/adm/abertura_adm.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .main_section {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #120948;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .main_left {
+            width: 100%;
+            height: 100%;
+            flex: 40%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem;
+        }
+
+        .main_left h1 {
+            font-family: 'gliker', sans-serif;
+            font-size: 4.5rem;
+            color: #ffffff;
+            text-align: center;
+            border-bottom: 2px solid #f06314;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .main_left h3 {
+            font-family: 'gliker', sans-serif;
+            font-size: 1.8rem;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .main_left p {
+            font-family: 'gliker', sans-serif;
+            font-size: 1.4rem;
+            background-color: #f06314;
+            padding: 1.5rem;
+            border-radius: 15px;
+            color: #F7F4E9;
+            text-align: center;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+
+        .main_right {
+            flex: 60%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: 50px;
+        }
+
+        .main_right img {
+            width: 95%;
+            height: 100%;
+            border-radius: 20px;
+            display: block;
+        }
+
+        .sobre{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            gap: 2rem;
+            background-color: #120948;
+        }
+
+        .sobreL{
+            flex: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 40px;
+        }
+
+        .sobre h1{
+            font-family: 'gliker', sans-serif;
+            font-size: 4.5rem;
+            color: #ffffff;
+            text-align: justify;
+            border-bottom: 2px solid #f06314;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .sobre p{
+            font-family: 'gliker', sans-serif;
+            font-size: 1.5rem;
+            color: #F7F4E9;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .sobreR{
+            flex: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sobreR img{
+            width: 1000%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .p{
+            width: 100%;
+            height: 25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f06314;
+            color: #ffffff;
+            font-family: GLIKER, sans-serif;
+            font-size: 2REM
+        }
+
+
+        .prof{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            gap: 2rem;
+            background-color: #120948;
+        }
+
+        .profL{
+            flex: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profL img{
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .profR{
+            flex: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30PX;
+            gap: 1.5rem;
+        }
+
+        .profR h1{
+            font-family: 'gliker', sans-serif;
+            font-size: 4rem;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #f06314;
+            margin-bottom: 1rem;
+        }
+
+        .profR p{
+            font-family: 'gliker', sans-serif;
+            font-size: 1.5rem;
+            color: #F7F4E9;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .estrelas1{
+            width: 15%;
+            height: auto;
+        }
+
+        .profteste{
+            width: 10%;
+            height: auto;
+        }
+        .eli{
+            width: 15%;
+            height: auto;
+        }
+        .marcela{
+            width: 40%;
+            height: auto;
+        }
+
+        .klebeer{
+            width: 30%;
+            height: auto;
+        }
+
+        .coracao{
+            width: 15%;
+            height: auto;
+        }
+
+        .coroa{
+            width: 15%;
+            height: auto;
+        }
+
+        .profReais{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            gap: 5rem;
+            padding: 60px;
+            background-color: #f06314;
+            color: #ffffff;
+            font-family: GLIKER, sans-serif;
+            font-size: 2rem;
+        }
+
+        .profReais_container{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profReal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profReal img{
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+

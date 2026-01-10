@@ -1,0 +1,128 @@
+/*-- Imports --*/
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Gluten:wght@100..900&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/*
+FONTES
+Para títulos --> Boogaloo / Audiowide
+Para parágrafos --> Andika 
+
+ 
+
+CORES
+#e9db1a (amarelo vibrante)
+#F7F4E9 (bege)
+#CB6CE6 (roxo) 
+#9E7AA8 (lilás)
+*/
+
+
+@font-face {
+    font-family: 'gra';
+    src: url('../fonts/Graphers\ Blog.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Moon';
+    src: url('../fonts/Moonstar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'little';
+    src: url('../fonts/LittleBird.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main_sec {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_divR {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 50%;
+    padding: 2rem;
+}
+
+.main_divR h1 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: #000000;
+    margin: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.main_divR h1 img {
+    width: 15%;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.main_divR h3 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.main_divR p {
+     font-family: "Permanent Marker", cursive;
+     font-weight: 400;
+     font-style: normal;
+    font-size: 1.3rem;
+    color: #333333;
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.main_divL {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+}   
+
+.main_divL img {
+    width: 50%;
+    height: auto;
+}
