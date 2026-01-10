@@ -14,11 +14,6 @@ if (event.propertyName === "transform") {
     }
 });
 
-// RESET quando a página for exibida novamente
-window.addEventListener("pageshow", () => {
-    anima.classList.remove("ativo");
-});
-
 /*-- Animação Texto --*/
 const palavras = ["O", "E", "ET", "ETE", "ET", "E"];
 let indice = 0;

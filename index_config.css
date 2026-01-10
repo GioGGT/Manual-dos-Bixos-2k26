@@ -71,6 +71,7 @@
         .anima.ativo {
             transform: translate(-50%, -50%) scale(20);
         }
+        
 /*-- Ajustes Mobile --*/
         @media (max-height: 500px) {
             

@@ -82,7 +82,7 @@
 
     section img {
         border-radius: 10px;
-        max-width: 480px;
+        width: 40%;
         float: left;
         margin-right: 20px;
     }

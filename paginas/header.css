@@ -31,12 +31,13 @@ header img {
     right: -100%;
     z-index: 10;
     width: 300px;
-    background: linear-gradient(135deg, #FFDE59 0%, #F7F4E9 70%);
+    background-color: white;
 
     overflow-y: auto; /* Permite rolagem vertical */
     overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
     -webkit-overflow-scrolling: touch; /* Suaviza rolagem no mobile */
     transition: 0.75s ease-out;
+    box-shadow: 5px -5px 10px 8px #e3e2e2cd;
 }
 
 .link-header {
@@ -86,8 +87,8 @@ header svg:hover {
 
 .link-header:hover {
     background-color: #CB6CE6;
-    color: #FFDE59;
-    box-shadow: 0px 0px 10px 5px #cc6ce66f;
+    color: white;
+    box-shadow: 0px 0px 7px 3px #cc6ce66f;
 }
 
 
