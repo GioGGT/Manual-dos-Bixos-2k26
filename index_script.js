@@ -1,23 +1,34 @@
-/*-- Animação Iniciar --*/
 const botao = document.getElementById("btnIniciar");
 const anima = document.getElementById("anima");
 
-let iniciouAnimacao = false;
+// 1. O "Reset" para o botão voltar
+window.addEventListener("pageshow", (event) => {
+    // Se a página veio do cache de navegação, removemos a classe
+    if (event.persisted) {
+        anima.classList.remove("ativo");
+    }
+});
 
+// 2. Iniciar animação
 botao.addEventListener("click", () => {
-    iniciouAnimacao = true;
     anima.classList.add("ativo");
 });
 
-// Escuta o fim da transição
+// 3. Troca de tela
 anima.addEventListener("transitionend", (event) => {
-    if (event.propertyName === "transform" && iniciouAnimacao) {
+    if (event.propertyName === "transform") {
         window.location.href = "paginas/home.html";
     }
 });
 
-// Ao voltar para a página (mobile)
-window.addEventListener("pageshow", () => {
-    iniciouAnimacao = false;
-    anima.classList.remove("ativo");
-});
+/*-- Animação Texto --*/
+const palavras = ["O", "E", "ET", "ETE", "ET", "E"];
+let indice = 0;
+
+function animar() {
+  document.getElementById("dinamico").textContent = palavras[indice];
+  indice = (indice + 1) % palavras.length;
+  setTimeout(animar, 600);
+}
+
+animar();
