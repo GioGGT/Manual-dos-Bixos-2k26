@@ -8,6 +8,15 @@
 
     }
 
+    body {
+        background-color: rgb(254, 240, 255);
+    }
+
+    header {
+        background-color: transparent;
+    }
+
+
     #seta-link {
         margin-left: auto;
     }
@@ -29,7 +38,7 @@
         padding: 0px 35px 35px 35px;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 45px;
     }
 
     .intro {
@@ -60,14 +69,14 @@
     h1 {
         color: #CB6CE6;
         font-family: Boogaloo;
-        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
         margin-bottom: 10px;
         letter-spacing: 0.1rem;
     }
 
     p {
         font-family: Andika;
-        font-size: clamp(0.8rem, 2vw, 1rem);
+        font-size: clamp(1rem, 2vw, 1.5rem);
         color: #CB6CE6;
         text-align: justify;
     }
@@ -77,7 +86,7 @@
         display: flow-root;
         padding: 25px;
         border-radius: 10px;
-        box-shadow: 0px 0px 14px 14px #f2f2f2b1;
+        box-shadow: 0px 0px 15px 3px rgba(241, 221, 242, 0.769);
     }
 
     section img {
@@ -94,14 +103,13 @@
     @media (max-width: 780px) {
 
         main {
-            padding: 0px 20px 20px 20px;
+            padding: 0px 25px 20px 25px;
         }
 
         section {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
-            box-shadow: 0px 0px 10px 10px #f2f2f2b1;
         }
 
         section img {

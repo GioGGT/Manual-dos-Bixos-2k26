@@ -50,7 +50,7 @@
 
 /*-- Logo --*/
         img{
-            width: clamp(300px, 50vw, 400px);
+            width: clamp(300px, 50vw, 450px);
             height: auto;
         }
 
