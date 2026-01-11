@@ -21,7 +21,6 @@ CORES
     font-style: normal;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +43,7 @@ main {
 
 section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +80,6 @@ section::before {
         opacity: 0;
         transform: translateX(-30px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
@@ -145,7 +143,6 @@ section::before {
     transition: all 0.3s ease;
 }
 
-
 .right_sec {
     flex: 1;
     display: flex;
@@ -161,7 +158,6 @@ section::before {
         opacity: 0;
         transform: translateX(30px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
@@ -197,7 +193,6 @@ section::before {
     font-size: 1.4rem;
     box-shadow: 0 10px 30px rgba(233, 219, 26, 0.2),
         0 5px 15px rgba(0, 0, 0, 0.3);
-
 }
 
 .container_tradições {
@@ -212,7 +207,7 @@ section::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
     overflow: hidden;
@@ -224,7 +219,7 @@ section::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+    min-height: 50vh;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     flex: 60%;
     gap: 30px;
@@ -253,7 +248,7 @@ section::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+    min-height: 50vh;
     flex: 40%;
 }
 
@@ -264,13 +259,11 @@ section::before {
     border: 3px solid #e9db1a;
     box-shadow: 0 0 15px rgba(233, 219, 26, 0.3);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .roleR img:hover {
     border-color: #ffed4e;
     box-shadow: 0 0 20px rgba(233, 219, 26, 0.5);
-
 }
 
 .energia {
@@ -284,7 +277,7 @@ section::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 40vh;
+    min-height: 40vh;
     width: 100%;
     text-align: center;
 }
@@ -308,7 +301,7 @@ section::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
     overflow: hidden;
@@ -320,7 +313,7 @@ section::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+    min-height: 50vh;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     flex: 50%;
     gap: 30px;
@@ -349,7 +342,7 @@ section::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
+    min-height: 50vh;
     flex: 50%;
 }
 
@@ -360,13 +353,11 @@ section::before {
     border: 3px solid #e9db1a;
     box-shadow: 0 0 15px rgba(233, 219, 26, 0.3);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .atelieL img:hover {
     border-color: #ffed4e;
     box-shadow: 0 0 20px rgba(233, 219, 26, 0.5);
-
 }
 
 .projetos {
@@ -416,7 +407,6 @@ section::before {
     font-weight: 400;
 }
 
-
 .professores {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -425,7 +415,6 @@ section::before {
     margin: 0 auto;
     padding: 20px;
 }
-
 
 .professor {
     background: rgba(255, 255, 255, 0.05);
@@ -438,7 +427,7 @@ section::before {
     justify-content: center;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-   gap: 30px
+    gap: 30px;
 }
 
 .professor:hover {
@@ -446,7 +435,6 @@ section::before {
     border-color: #e9db1a;
     box-shadow: 0 10px 30px rgba(233, 219, 26, 0.1);
 }
-
 
 .professor img {
     width: 180px;
@@ -462,7 +450,7 @@ section::before {
     font-family: "Audiowide", sans-serif;
     color: #e9db1a;
     font-size: 2rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .professor p {
@@ -471,13 +459,14 @@ section::before {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .inter {
     padding: 60px;
     gap: 50px;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     background-image: url(../imgs/elo/raio.gif);
     background-size: contain;
     background-position: center;
@@ -503,11 +492,302 @@ section::before {
 .inter img {
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    max-width: 100%;
+    height: auto;
 }
 
-/* Responsividade: 1 por linha em telas pequenas */
-@media (max-width: 900px) {
+/* ============================================
+   MEDIA QUERIES - RESPONSIVIDADE
+   ============================================ */
+
+/* Tablets e telas médias (até 1024px) */
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .left_sec, .right_sec {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .left_sec h1 {
+        font-size: 2.8rem;
+    }
+
+    .left_sec h2 {
+        font-size: 1.8rem;
+    }
+
+    .left_sec p {
+        font-size: 1.1rem;
+    }
+
+    .role{
+        flex-direction: column;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .atelie{
+        flex-direction: column-reverse;
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .roleL, .roleR, .atelieL, .atelieR {
+        width: 100%;
+        flex: 100%;
+        padding: 30px;
+    }
+
+    .roleR img, .atelieL img {
+        width: 10%;
+    }
+
+    .professores {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .main_professores h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .left_sec {
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .left_sec h1 {
+        font-size: 2.2rem;
+    }
+
+    .left_sec h2 {
+        font-size: 1.5rem;
+    }
+
+    .left_sec p {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .right_sec {
+        padding: 20px;
+    }
+
+    .Tradições {
+        padding: 40px 20px;
+        font-size: 1.2rem;
+    }
+
+    .roleL h1, .atelieR h1 {
+        font-size: 2rem;
+    }
+
+    .roleL p, .atelieR p {
+        font-size: 1.1rem;
+    }
+
+    .energia {
+        padding: 40px 20px;
+    }
+
+    .energia h1 {
+        font-size: 1.8rem;
+    }
+
+    .energia p {
+        font-size: 1.1rem;
+    }
+
+    .projetos {
+        padding: 40px 20px;
+        font-size: 1.2rem;
+    }
+
+    .projetos img {
+        width: 80%;
+    }
+
+    .main_professores {
+        padding: 40px 15px;
+    }
+
+    .main_professores h1 {
+        font-size: 2rem;
+    }
+
+    .main_professores h3 {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
     .professores {
         grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 10px;
+    }
+
+    .professor {
+        padding: 25px;
+    }
+
+    .professor h2 {
+        font-size: 1.6rem;
+    }
+
+    .professor p {
+        font-size: 1.1rem;
+    }
+
+    .inter {
+        padding: 40px 20px;
+        font-size: 1.2rem;
+    }
+
+    .inter h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .left_sec {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .left_sec h1 {
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+    }
+
+    .left_sec h2 {
+        font-size: 1.3rem;
+    }
+
+    .left_sec p {
+        font-size: 0.95rem;
+        padding: 12px;
+        line-height: 1.6;
+    }
+
+    .right_sec {
+        padding: 15px;
+    }
+
+    .right_sec img:hover {
+        transform: scale(1.02) translateY(-5px);
+    }
+
+    .Tradições {
+        padding: 30px 15px;
+        font-size: 1.1rem;
+    }
+
+    .roleL, .roleR, .atelieL, .atelieR {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .roleL h1, .atelieR h1 {
+        font-size: 1.6rem;
+    }
+
+    .roleL p, .atelieR p {
+        font-size: 1rem;
+    }
+
+    .roleR img{
+        width: 70%;
+    }
+    
+    .atelieL img {
+        width: 100%;
+    }
+
+    .energia {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .energia h1 {
+        font-size: 1.5rem;
+    }
+
+    .energia p {
+        font-size: 1rem;
+    }
+
+    .projetos {
+        padding: 30px 15px;
+        font-size: 1.1rem;
+    }
+
+    .projetos h1 {
+        font-size: 1.5rem;
+    }
+
+    .projetos img {
+        width: 90%;
+        border-radius: 50px;
+    }
+
+    .main_professores {
+        padding: 30px 10px;
+    }
+
+    .main_professores h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .main_professores h3 {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .professores {
+        gap: 20px;
+        padding: 5px;
+    }
+
+    .professor {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .professor img {
+        width: 140px;
+        height: 140px;
+        margin: 10px 0;
+    }
+
+    .professor h2 {
+        font-size: 1.4rem;
+    }
+
+    .professor p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .inter {
+        padding: 30px 15px;
+        gap: 25px;
+        font-size: 1.1rem;
+    }
+
+    .inter h1 {
+        font-size: 1.5rem;
+        padding-bottom: 8px;
     }
 }
