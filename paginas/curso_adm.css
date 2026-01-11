@@ -301,3 +301,79 @@
             border-radius: 15px;
         }
 
+
+        .eventos{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 4rem 2rem;
+            gap: 2rem;
+            background-color: #120948;
+        }
+
+        .eventos h1{
+            font-family: 'gliker', sans-serif;
+            font-size: 4.5rem;
+            color: #ffffff;
+            text-align: center;
+            border-bottom: 2px solid #f06314;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .expo{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 4rem;
+        }
+
+        .expoL{
+            flex: 50%;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 1.5rem;
+            padding: 40px;
+        }
+
+        .expoL h1{
+            font-family: 'gliker', sans-serif;
+            font-size: 4rem;
+            color: #ffffff;
+            text-align: start;
+            border-bottom: 2px solid #f06314;
+            margin-bottom: 1rem;
+        }
+
+        .expoL p{
+            font-family: 'gliker', sans-serif;
+            font-size: 1.5rem;
+            color: #F7F4E9;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .expoR{
+            flex: 50%;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .expoR img{
+            width: 40%;
+            height: auto;
+            border-radius: 15px;
+        }
