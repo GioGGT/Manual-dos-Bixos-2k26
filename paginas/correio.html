@@ -54,13 +54,81 @@
 
         <section class="main_section">
             <div class="main_correio">
-            <h3 data-aos="fade-down">Procurando um novo pretendente? Chama o</h3>
-            <h1 data-aos="fade-down">Correio Elegante <img src="../imgs/correio/teste.png" class="teste" alt=""></h1>
-            <p data-aos="fade-down">Seu cupido estespiano</p>
+
+                <h1 data-aos="fade-down">Correio Elegante <img src="../imgs/correio/teste.png" class="teste" alt="">
+                </h1>
+                <h3 data-aos="fade-down"> A solução romântica criada para os etespianos apaixonados!</h3>
+                <p data-aos="fade-down"> Dentro da ETESP, além do clima acadêmico e amigável, o romance vem marcar sua
+                    presença por todo o campus.</p>
             </div>
         </section>
 
+        <section class="sec_Amor">
+            <div class="amor">
+                <div class="amorL">
+                    <img src="../imgs/correio/meninas.png" alt="">
+                </div>
+                <div class="amorR">
+                    <p>O  <span class="cor"> Correio Elegante </span> é uma tradição criada e transmitida de geração em
+                        geração
+                        pelos alunos do curso de Administração. Todos os anos, novas pessoas são escolhidas
+                        para os papéis de cupidos, aqueles que ficam responsáveis por espalhar afeto e carinho
+                        por todo o ambiente ao longo de um ano letivo entre os etespianos apaixonados.
+                        O Correio tem uma importância inegável, já que, ao longo dos anos, por meio dele,
+                        vários casais (e ex-casais), dos mais variados tipos, salas e cursos, foram formados em
+                        diferentes momentos e espaços dentro do campus. <img src="../imgs/correio/xoxo.png"
+                            style="width: 13%; margin: 10px; height: auto;" id="xoxo" alt=""></p>
+                </div>
+            </div>
+
+            <div class="amor">
+                <div class="amorR">
+                    <p>O <span class="cor"> Correio Elegante </span> acontece de forma física, em que os clientes
+                        compram os papéis
+                        coloridos em formato de corações, escrevem neles e contam com a magia dos cupidos para
+                        transformar desconhecidos, conhecidos ou o que seja em casais apaixonados. As datas
+                        são divulgadas com antecedência pelo Instagram (e por alguns outros meios), permitindo
+                        que todos os etespianos planejem suas melhores cantadas e também sua vida financeira. <img
+                            src="../imgs/correio/h.png" style="width: 7%; height: auto;" id="h" alt=""> <br> <br>
+                        <span class="teste"> OBS: É fundamental agir com atitude e bom senso ao enviar um Correio, já
+                            que
+                            os cupidos até deixam passar cantadas enfadonhas, mas nunca ofensas ou comentários
+                            desnecessários.</span> <br> <br>
+                        AQUELES QUE COMETEREM QUALQUER TIPO DE DESRESPEITO ESTÃO SUJEITOS ÀS DEVIDAS PUNIÇÕES.
+                    </p>
+                </div>
+                <div class="amorL">
+                    <img src="../imgs/correio/env.png" class="bejo" alt="">
+                </div>
+
+            </div>
+
+            <div class="final">
+                <p>Além disso, fiquem sempre atentos ao perfil oficial do Correio Elegante no Instagram:
+                    lá serão divulgados os horários, os dias e sugestões de cantadas para aqueles que estão
+                    sem criatividade. <img src="" alt=""></p>
+
+
+             <a href="https://www.instagram.com/correioelegante_etesp/" 
+   target="_blank" 
+   class="btn-coracao">
+  <span class="icon">❤</span>
+  <span class="text">@correioelegante_etesp</span>
+</a>
+
+ <a id="seta-link" href="cursos.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="seta">
+            <path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" />
+        </svg></a>
+            </div>
+
+        </section>
+
+        
+
     </main>
+
+    <div class="hearts-container"></div>
+
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -69,6 +137,29 @@
             once: true
         });
     </script>
+
+    <script>
+        const container = document.querySelector('.hearts-container');
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '💗';
+
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = (18 + Math.random() * 16) + 'px';
+            heart.style.animationDuration = (3 + Math.random() * 3) + 's'; // MAIS LENTO
+
+            container.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 9000);
+        }
+
+        setInterval(createHeart, 500); // MENOS FREQUENTE
+    </script>
+
 
 
 </body>
