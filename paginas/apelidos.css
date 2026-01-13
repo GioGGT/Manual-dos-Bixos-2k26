@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Autour+One&display=swap');
+
+header {
+background-color: #f8eefe;
+    width: 100%;
+    max-width: none;
+}
+
+header svg {
+    width: 24px;
+    height: 24px;
+}
+
+header label {
+    line-height: normal;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f8eefe;
+}
+
+.apelidos-container {
+    font-family: 'Autour One', cursive;
+}
+
+
+/* CONTAINER */
+
+.apelidos-container {
+    max-width: 820px;
+    margin: auto;
+    padding: 32px 20px;
+}
+
+/* TOPO */
+
+.topo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topo h1 {
+    font-family: 'Architects Daughter', cursive;
+    color: #CB6CE6;
+    font-size: 34px;
+    margin-bottom: 4px;
+}
+
+.topo h2 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 15px;
+    letter-spacing: 1.8px;
+    color: #6b3d75;
+    margin-bottom: 26px;
+}
+
+/* CARDS TOPO */
+
+.cards-topo {
+    display: flex;
+    gap: 18px;
+}
+
+.card {
+    padding: 18px;
+    border-radius: 14px;
+    flex: 1;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.28);
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card-claro {
+    background-color: #f6c9f7;
+        color: #6d1a78;
+}
+
+.card-roxo {
+    background-color: #6d1a78;
+    color: #f6c9f7;
+}
+
+/* BLOCOS */
+
+.bloco {
+    display: flex;
+    gap: 28px;
+    margin-top: 32px;
+    padding: 26px 28px;
+    border-radius: 22px;
+    align-items: center;
+    box-shadow: 9px 9px 0px rgba(0, 0, 0, 0.28);
+}
+
+.bloco img {
+    width: 170px;
+    flex-shrink: 0;
+}
+
+.bloco-texto {
+    flex: 1;
+    text-align: center;
+}
+
+/* TÍTULOS */
+
+.bloco h3 {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+/* CORES */
+
+.bixo {
+    background-color: #fff2c6;
+}
+
+.verme {
+    background-color: #1e8ec2;
+}
+
+.vet {
+    background-color: #c96a1c;
+}
+
+/* TEXTO */
+
+p {
+    font-size: 14.2px;
+    line-height: 1.55;
+}
+
+.bloco-texto p {
+    max-width: 480px;
+    margin: 0 auto 10px auto;
+}
+
+.obs {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+/* FRASE FINAL */
+
+.frase-final {
+    margin-top: 42px;
+    text-align: center;
+}
+
+.texto-final {
+    max-width: 540px;
+    margin: 0 auto 18px auto;
+}
+
+.tweet img {
+    max-width: 340px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+    .bloco {
+        flex-direction: column;
+    }
+
+    .bloco img {
+        width: 130px;
+    }
+
+    .bloco-texto p {
+        max-width: 100%;
+    }
+}
