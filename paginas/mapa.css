@@ -1,5 +1,8 @@
-main{
-   background-color:rgb(254, 240, 255);
+body{
+   background-color: rgb(254, 240, 255);
+}
+header{
+    background-color: transparent;
 }
 /* CONTAINER */
 .container {
@@ -31,19 +34,29 @@ main{
 /* REGIÕES */
 .region {
     position: absolute;
-    width: 70px;
-    height: 70px;
     border-radius: 14px;
     cursor: pointer;
     transition: transform 0.15s ease;
     text-align: center;
-}
 
-.region:active {
+    display: flex;    
+}
+.region span{
+    z-index: 2;
+}
+.preenchimento{
+    position: absolute;
+    z-index: 1;
+    align-items: center; 
+    text-align: center;
+}
+.region:hover {
     transform: scale(0.95);
 }
 
 .pink  { background: pink;}
+.gray  { background-color: gray;}
+.green {background-color: rgb(58, 162, 58);}
 .metro{
     top: 890px;
     left: 20px;
@@ -51,7 +64,88 @@ main{
     height: 100px;
     border-radius: 80px;
 }
-
+.hipo{
+    top:100px;
+    left:364px;
+}
+.hipoP1{
+    width: 60px;
+    height: 80px;
+}
+.hipoP2{
+    left: 60px;
+    width: 15px;
+    height: 30px;
+}
+.podi{
+    top: 120px;
+    left: 430px;
+}
+.podiP1{
+    top: 12px;
+    width: 120px;
+    height: 55px;
+}
+.podiP2{
+    top:-19px;
+    left: 70px;
+    width: 50px;
+    height: 32px;
+}
+.pFds{
+    top: 101px;
+    left: 610px;
+}
+.pFdsP1{
+    width: 90px;
+    height: 30px;
+}
+.cetaUpL{
+    left: 618px;
+    top: 148px;
+}
+.cetaUpR{
+    left: 658px;
+    top: 148px;
+}
+.cetaUpP1{
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+.cetaUpP2{
+    left: 20px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+.cetaUpP3{
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+.cetaUpP4{
+    left: 20px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+.cetaUpP5{
+    width: 27px;
+    height: 27px;
+    top: 2px;
+    left: 2px;
+}
+.pSouza{
+    top:190px;
+    left: 365px;
+}
+.pSouzaP1{
+    width: 130px;
+    height: 100px;
+}
 /* PAINEL */
 .info-panel {
     flex: 1;
@@ -73,6 +167,8 @@ main{
     color: #ff3b3b;
     font-size: 14px;
     text-align: center;
+    background-position: center;
+    background-size:cover;
 }
 
 /* MOBILE */
