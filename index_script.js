@@ -1,23 +1,26 @@
 const botao = document.getElementById("btnIniciar");
 const anima = document.getElementById("anima");
 
-// 1. O "Reset" para o botão voltar
-window.addEventListener("pageshow", (event) => {
-    // Se a página veio do cache de navegação, removemos a classe
-    if (event.persisted) {
-        anima.classList.remove("ativo");
-    }
-});
-
-// 2. Iniciar animação
 botao.addEventListener("click", () => {
     anima.classList.add("ativo");
+
+    const handleTransition = (event) => {
+        if (event.propertyName === "transform") {
+            window.location.href = "paginas/home.html";
+        }
+    };
+
+    anima.addEventListener("transitionend", handleTransition, { once: true });
+
+    // Fallback de segurança: se após 1s não mudou de página, força a mudança
+    setTimeout(() => {
+        window.location.href = "paginas/home.html";
+    }, 1000);
 });
 
-// 3. Troca de tela
-anima.addEventListener("transitionend", (event) => {
-    if (event.propertyName === "transform") {
-        window.location.href = "paginas/home.html";
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        anima.classList.remove("ativo");
     }
 });
 
