@@ -15,6 +15,10 @@ main {
     --corF: #0F5978;
 }
 
+header{
+    background-color: transparent;
+}
+
 @keyframes bg {
     to {
         background-position: 1423px -800px;
@@ -128,4 +132,5 @@ section {
             calc(0% + var(--y))
         );
     }
+
 }
