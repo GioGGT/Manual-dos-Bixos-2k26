@@ -14,32 +14,21 @@
         section {
             border: 2px solid #f977b2;
             box-shadow: -4px 4px 0px 4px #f977b2;
-            align-items: stretch;
-            display: flex;
         }
 
-        section p,
-        #voltar {
-            color: #be4995;
+        section p {
+            color: black;
         }
 
         #voltar {
+            color: #f977b2;
             font-family: Andika;
             text-decoration: underline;
+            font-size: clamp(1rem, 2vw, 1.5rem);
         }
 
         #voltar:hover {
             cursor: pointer;
-        }
-
-        section img {
-            width: 35%;
-        }
-
-        .texto {
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
         @media (max-width: 780px) {
