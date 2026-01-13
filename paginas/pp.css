@@ -2,6 +2,24 @@ body{
     margin: 0;
 }
 
+#seta-link {
+            margin-left: auto;
+        }
+
+        #seta {
+            fill: #ffde59;
+            height: 60px;
+            width: 60px;
+            z-index: 2;
+        }
+
+        #seta:hover {
+            cursor: pointer;
+            transition: 0.3s ease;
+            height: 63px;
+            width: 63px;
+        }
+
 main {
     display: flex;
     flex-direction: column;
@@ -138,4 +156,5 @@ section {
     }
 
 }
+
 
