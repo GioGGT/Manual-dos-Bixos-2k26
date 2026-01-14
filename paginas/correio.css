@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 /*
 FONTES
-Para títulos --> Boogaloo / Audiowide
+Para títulos --> Boogaloo / 
 Para parágrafos --> Andika 
 
 CORES
@@ -16,6 +16,21 @@ CORES
 
 9d1215
 */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* fundo da barra */
+::-webkit-scrollbar-track {
+    background:#CC0000 /* cor do fundo */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff; /* cor principal */
+    border-radius: 20px;
+    width: 3px;
+}
 
 @font-face {
     font-family: 'dar';
