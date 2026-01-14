@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("imgs/img/fundo.png");
+    background-image: url("imgs/img_arte/fundo.png");
     /*background-size: cover;*/
     background-repeat: repeat; 
     background-position: center; 
@@ -166,4 +166,5 @@ svg{
     }
 
 }
+
 
