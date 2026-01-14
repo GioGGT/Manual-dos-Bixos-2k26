@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Autor+One&display=swap');
+
+:root {
+    --verde-escuro: #6F7F4D;
+    --verde-claro: #AAC863;
+    --teal: #1CA3A8;
+    --laranja: #F08741;
+
+    --bg: #8fa06a; /* FUNDO VERDE */
+    --card: #f6f4ec; /* papel natural */
+    --texto: #2b2b2b;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    background: var(--bg);
+    font-family: 'Autor One', sans-serif;
+    color: var(--texto);
+    line-height: 1.8;
+}
+
+/* IMAGENS */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 22px;
+}
+
+/* HEADER */
+.header-ma {
+    padding: 20px 5%;
+    background: #e7eadc;
+    box-shadow: 0 4px 15px rgba(0,0,0,.12);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-ma img {
+    height: 50px;
+}
+
+/* HERO */
+.hero {
+    min-height: 75vh;
+    background: var(--verde-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* MANCHAS ORGÂNICAS */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.25;
+}
+
+.hero::before {
+    width: 420px;
+    height: 420px;
+    background: var(--verde-claro);
+    top: -160px;
+    left: -120px;
+}
+
+.hero::after {
+    width: 320px;
+    height: 320px;
+    background: var(--teal);
+    bottom: -140px;
+    right: -100px;
+}
+
+.hero h3,
+.hero h1 {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(3.5rem, 8vw, 6rem);
+    letter-spacing: 3px;
+}
+
+/* SECTIONS */
+section {
+    max-width: 1200px;
+    margin: 0 auto 90px;
+    padding: 60px 5%;
+}
+
+/* TITLES */
+.section-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--verde-escuro);
+    margin-bottom: 35px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    height: 6px;
+    background: var(--laranja);
+    border-radius: 20px;
+}
+
+/* CARTÕES / PAPEL */
+.section-card,
+.topico-card,
+.professor-card {
+    background: var(--card);
+    border-radius: 26px;
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.12),
+        inset 0 0 0 2px rgba(255,255,255,.4);
+}
+
+/* INTRO */
+.section-card {
+    padding: 55px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre-texto p {
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+}
+
+.sobre-img img {
+    max-height: 420px;
+    object-fit: cover;
+    border: 5px solid var(--verde-claro);
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+/* TOPICOS */
+.topicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.topico-card {
+    padding: 38px;
+    border-left: 7px solid var(--verde-claro);
+}
+
+/* IMAGENS NOS TÓPICOS */
+.topicos-grid img {
+    max-height: 280px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+/* EVENTOS */
+.evento-destaque {
+    background: var(--teal);
+    color: white;
+    border-radius: 28px;
+    padding: 55px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.2);
+}
+
+.evento-destaque .section-title {
+    color: white;
+}
+
+.evento-destaque .section-title::after {
+    background: white;
+}
+
+.evento-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.evento-content img {
+    max-height: 320px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* PROFESSORES */
+.prof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.professor-card {
+    padding: 35px;
+    border-top: 6px solid var(--laranja);
+}
+
+.professor-card h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: var(--laranja);
+    margin-bottom: 15px;
+}
+
+.professor-card img {
+    max-height: 260px;
+    object-fit: cover;
+    margin: 18px 0 22px;
+}
+
+/* ENCERRAMENTO */
+.encerrar {
+    background: var(--laranja);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 75px 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+}
+
+.encerrar h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 30px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 18px 45px;
+    border-radius: 50px;
+    background: white;
+    color: var(--laranja);
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+/* RESPONSIVO */
+@media (max-width: 968px) {
+    .sobre,
+    .evento-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    section {
+        padding: 40px 5%;
+        margin-bottom: 60px;
+    }
+
+    .topicos-grid,
+    .prof-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-img img,
+    .evento-content img,
+    .topicos-grid img {
+        max-height: 220px;
+    }
+}

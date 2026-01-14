@@ -47,7 +47,7 @@ header {
     font-family: 'Boogaloo', cursive;
     font-size: 2rem;
     margin: 20px;
-    
+
 }
 
 .intro>h1 {
@@ -60,7 +60,7 @@ header {
 .links-cursos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     gap: 30px;
     width: 90%;
     margin: 40px auto;
@@ -369,4 +369,22 @@ header {
     .background span {
         display: none;
     }
+}
+
+#seta-link {
+    margin-left: auto;
+}
+
+#seta {
+    fill: #CB6CE6;
+    height: 60px;
+    width: 60px;
+    margin-right: 40px;
+}
+
+#seta:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 63px;
+    width: 63px;
 }
