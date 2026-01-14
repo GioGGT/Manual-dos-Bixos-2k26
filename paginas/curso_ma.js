@@ -6,10 +6,10 @@ function leaf(){
     l.src = type == 0? "../imgs/ma/leaf1.png" : "../imgs/ma/leaf2.png";
     l.style.setProperty("--r", -20 + "deg");
     l.style.left = Math.floor(Math.random()*100) + "%"
-    l.style.height = Math.floor(Math.random()*80) + 80 + "px"
+    l.style.height = Math.floor(Math.random()*60) + 60 + "px"
     l.style.setProperty("--h", Math.floor(Math.random() * (30 - 5 + 1)) + 105 + "vh")
     lc.appendChild(l);
-    setTimeout(leaf, 1000)
+    setTimeout(leaf, 2000)
     l.addEventListener("animationend", () => {
         l.remove();
     })
@@ -17,4 +17,5 @@ function leaf(){
 
 
 document.addEventListener("DOMContentLoaded", () =>{leaf()})
+
 
