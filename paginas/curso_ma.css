@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Autor+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 :root {
     --verde-escuro: #6F7F4D;
     --verde-claro: #AAC863;
@@ -9,6 +9,36 @@
     --bg: #8fa06a; /* FUNDO VERDE */
     --card: #f6f4ec; /* papel natural */
     --texto: #2b2b2b;
+}
+
+#leafCont{
+    position: fixed;
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.leaf{
+    position: absolute;
+    top: -5%;
+    aspect-ratio: 529 / 472;
+    animation: 
+    fall 24s linear forwards;
+    transform: rotate(var(--r)) scaleX(-1);
+    filter: brightness(.9) saturate(.5);
+    opacity: .5;
+    transform-origin: 20% 50%;
+}
+
+@keyframes fall{
+    to {
+        transform: translateY(var(--h));
+    }
+}
+
+p{
+    font-family: "Nunito", sans-serif;
 }
 
 /* RESET */
