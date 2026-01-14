@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Autour+One&display=swap');
 
+
+
 header {
-background-color: #f8eefe;
+    background-color: #f8eefe;
     width: 100%;
     max-width: none;
 }
@@ -42,17 +44,18 @@ body {
 }
 
 .topo h1 {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Boogaloo ', cursive;
     color: #CB6CE6;
     font-size: 34px;
     margin-bottom: 4px;
 }
 
 .topo h2 {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Boogaloo', cursive;
     font-size: 15px;
     letter-spacing: 1.8px;
     color: #6b3d75;
+    font-size: 1.2rem;
     margin-bottom: 26px;
 }
 
@@ -74,11 +77,14 @@ body {
 
 .card p {
     margin: 0;
+    text-align: justify;
+    font-family: 'Andika', Courier, monospace;
+    font-size: 1.2rem;
 }
 
 .card-claro {
     background-color: #f6c9f7;
-        color: #6d1a78;
+    color: #6d1a78;
 }
 
 .card-roxo {
@@ -111,8 +117,9 @@ body {
 /* TÍTULOS */
 
 .bloco h3 {
-    font-size: 24px;
+    font-size: 34px;
     margin-bottom: 14px;
+    font-family: 'boogaloo';
 }
 
 /* CORES */
@@ -122,18 +129,20 @@ body {
 }
 
 .verme {
-    background-color: #1e8ec2;
+    background-color: #2ea9e2;
 }
 
 .vet {
-    background-color: #c96a1c;
+    background-color: #000000;
+    color: white;
 }
 
 /* TEXTO */
 
 p {
-    font-size: 14.2px;
+    font-size: 1rem;
     line-height: 1.55;
+    text-align: justify;
 }
 
 .bloco-texto p {
@@ -142,7 +151,8 @@ p {
 }
 
 .obs {
-    font-size: 13px;
+    font-size: 25px;
+    font-family: boogaloo;
     margin-top: 10px;
 }
 
@@ -158,28 +168,65 @@ p {
 }
 
 .texto-final {
-    max-width: 540px;
-    margin: 0 auto 18px auto;
+    width: 100%;
+    margin: 20 auto 18px auto;
+    font-size: 1.5rem;
 }
 
 .tweet img {
-    max-width: 340px;
+    width: 70%;
     border-radius: 12px;
-    box-shadow: 6px 6px 0 rgba(0,0,0,0.25);
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.bloco.vet img {
+    width:
+        30% !important;
 }
 
 /* RESPONSIVO */
 
 @media (max-width: 700px) {
+
+    .cards-topo {
+        flex-direction: column;
+    }
+
     .bloco {
         flex-direction: column;
     }
 
     .bloco img {
-        width: 130px;
+        width: 150px;
+    }
+
+    .bloco.vet img {
+        width:
+            70% !important;
     }
 
     .bloco-texto p {
         max-width: 100%;
     }
+}
+
+#seta-link {
+    margin-left: auto;
+}
+
+#seta {
+    fill: #ffde59;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+}
+
+#seta:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 63px;
+    width: 63px;
 }

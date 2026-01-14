@@ -14,6 +14,23 @@
         #9E7AA8 (lilás)
         */
 
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* fundo da barra */
+        ::-webkit-scrollbar-track {
+            background: #0a052b
+                /* cor do fundo */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #f06314;
+            /* cor principal */
+            border-radius: 20px;
+        }
+
+
         @font-face {
             font-family: 'gliker';
             src: url('../fonts/gliker-regular.ttf') format('truetype');
@@ -574,7 +591,7 @@
                 text-align: justify;
             }
 
-         
+
             .main_section {
                 flex-direction: column;
                 height: auto;
@@ -623,7 +640,7 @@
                 width: 120%;
             }
 
-        
+
             .profReais {
                 height: auto;
                 padding: 4rem 3rem;
@@ -649,7 +666,7 @@
                 left: 20px;
             }
 
-        
+
             .dicas {
                 padding: 5rem 4rem;
             }
@@ -663,7 +680,7 @@
                 text-align: center;
             }
 
-         
+
             .encerrar {
                 height: auto;
                 padding: 4rem 3rem;
@@ -712,20 +729,20 @@
                 text-align: center;
             }
 
-          .profteste {
-            width: 15%;
-            height: auto;
-        }
+            .profteste {
+                width: 15%;
+                height: auto;
+            }
 
             .main_section {
                 flex-direction: column;
                 height: 100vh;
-                
+
             }
 
-              .main_left h1 {
-            border-bottom: none;
-        }
+            .main_left h1 {
+                border-bottom: none;
+            }
 
             .prof {
                 flex-direction: column;
@@ -765,7 +782,7 @@
             }
 
             .profL img {
-                width: 150%;
+                width: 180%;
             }
 
 
@@ -784,10 +801,10 @@
 
             .profReal img {
                 margin-top: 40px;
-                width: 65%;
+                width: 60%;
             }
 
-           
+
 
             .expo {
                 flex-direction: column;
@@ -830,7 +847,7 @@
                 text-align: center;
             }
 
- 
+
             .encerrar {
                 height: auto;
                 gap: 3rem;
@@ -852,9 +869,43 @@
                 left: 36px;
             }
 
-             .eventos h1 img {
-            width: 12%;
-            height: auto;
+            .eventos h1 img {
+                width: 12%;
+                height: auto;
+            }
+
+              .eli {
+            width: 25%;
+  
+        }
+
+        .marcela {
+            width: 70%;
+    
+        }
+
+        .klebeer {
+            width: 50%;
+  
+        }
+
+        .coracao {
+            width: 25%;
+ 
+        }
+
+        .coroa {
+            width: 20%;
+   
+        }
+
+        .aff{
+            border-bottom: none !important;
+            font-size: 3rem !important;
+        }
+
+        .es{
+            width: 20% !important;
         }
 
         }

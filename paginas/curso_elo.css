@@ -14,6 +14,20 @@ CORES
 #9E7AA8 (lilás)
 */
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* fundo da barra */
+::-webkit-scrollbar-track {
+    background:#000000 /* cor do fundo */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e9db1a; /* cor principal */
+    border-radius: 20px;
+}
+
 @font-face {
     font-family: 'run';
     src: url('../fonts/Run!\ Demo.otf') format('truetype');
