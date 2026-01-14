@@ -5,16 +5,16 @@ const trips = [
         year: "1º ano",
         title: "PARANAPIACABA",
         badge: "Paranapiacaba • 1º ano",
-        cover: "img/paranapiacaba_capa.jpg",
-        teaser: "Centro histórico, passeio de barco e aquele clima de viagem que junta todo mundo.",
+        cover: "../paginas/imgs/viagens/paranapiacaba_capa.jpg",
+        teaser: "Paranapiacaba, distrito com forte ação ferroviária inglesa,"+ 
+        "hoje histórico(e tem quem diga que é assombrado por bruxas!)",
         story:
-            "Paraty é aquele lugar que mistura história com paisagem bonita. " +
-            "A turma geralmente curte o centro histórico, passeio de barco e muita foto. " +
-            "Dica: chinelo + tênis, porque tem pedra e também tem água.",
+            "Em uma das viagens do 1° ano vocês terão a oportunidade de conhecer Paranapiacaba, um vilarejo cheio de história e com um clima único." +
+            "O lugar é palco de muito aprendizado e diversão, proporcionando risadas, por conta das trilhas em meio a lama, e conhecimento, afinal, paranapiacaba é o berço de muitas histórias e antiguidades. " ,
         gallery: [
-            "imgs/image.png",
-            "img/paraty_2.jpg",
-            "img/paraty_3.jpg"
+            "../paginas/imgs/viagens/paranapiacaba_1.jpg",
+            "../paginas/imgs/viagens/paranapiacaba_2.png",
+            "../paginas/imgs/viagens/paranapiacaba_3.png"
         ]
     },
     {
@@ -22,16 +22,16 @@ const trips = [
         year: "1º ano",
         title: "SANTOS",
         badge: "Santos • 1º ano",
-        cover: "img/santos_capa.jpg",
-        teaser: "Centro histórico, passeio de barco e aquele clima de viagem que junta todo mundo.",
+        cover: "../paginas/imgs/viagens/santos_capa.png",
+        teaser: "Localizado na Baixada Santista, região litorânea de São Paulo, com museus históricos do Café e do grande Rei Pelé!!",
         story:
-            "Paraty é aquele lugar que mistura história com paisagem bonita. " +
-            "A turma geralmente curte o centro histórico, passeio de barco e muita foto. " +
-            "Dica: chinelo + tênis, porque tem pedra e também tem água.",
+            "Adicionado á pouco tempo, mas adorado por muitos, temos o passeio ao Porto de Santos. " +
+            "As aventuras em meio ao litoral e suas praias são uma das mais marcantes do primeiro ano. " +
+            " Com visitas aos museus e passeio de escuna, onde vocês poderão fazer alguns mergulhos (se tiverem coragem) e apreciar a vista do mar. ",
         gallery: [
-            "img/paraty_1.jpg",
-            "img/paraty_2.jpg",
-            "img/paraty_3.jpg"
+            "../paginas/imgs/viagens/santos_1.jpg",
+            "../paginas/imgs/viagens/santos_2.jpg",
+            "../paginas/imgs/viagens/santos_3.png"
         ]
     },
     {
@@ -39,16 +39,16 @@ const trips = [
         year: "2º ano",
         title: "CANANÉIA",
         badge: "Cananéia • 2º ano",
-        cover: "img/cananeia_capa.jpg",
+        cover: "../paginas/imgs/viagens/cananeia_capa.jpg",
         teaser: "Já imaginou passar 3 dias em um chalé em frente à praia, em uma ilha, com os amigos?",
         story:
-            "Pois é, a viagem do 2º ano foi para nada menos que a Ilha do Cardoso, próxima a Cananéia. " +
-            "Foram dias com trilhas, praia, risadas e aquela sensação de estar vivendo algo que vai virar " +
-            "história pra sempre. Leva repelente, tênis confortável e prepara a câmera!",
+            "No momento em que se tornarem vermes, poderão passar uma estadia de 3 dias em Cananéia, na incrível Ilha do Cardoso, que é palco de muita risada e diversão!!!  " +
+            "Foram dias com trilhas, praia, risadas e aquela sensação de estar vivendo algo que vai virar uma memória incrível.Vocês poderão conhecer a região preservada por caiçaras, explorar o Poço das Antas, se sujar no manguezal, curtir a praia e, de quebra, conhecer um pouco da cidade e da história de Cananeia!!! " +
+            "Leva repelente, tênis confortável e prepara a câmera!",
         gallery: [
-            "img/cananeia_1.jpg",
-            "img/cananeia_2.jpg",
-            "img/cananeia_3.jpg"
+            "../paginas/imgs/viagens/cananeia_1.jpg",
+            "../paginas/imgs/viagens/cananeia_2.JPG",
+            "../paginas/imgs/viagens/cananeia_3.jpg"
         ]
     },
     {
@@ -56,16 +56,15 @@ const trips = [
         year: "3º ano",
         title: "PETAR",
         badge: "Petar • 3º ano",
-        cover: "img/petar_capa.jpg",
-        teaser: "Friozinho, passeio e aquela vibe de despedida com a turma no último ano.",
+        cover: "../paginas/imgs/viagens/petar_capa.png",
+        teaser: "Parque Estadual Turístico do Alto Ribeira. e se aventurar nas cavernas e paisagens lindas do extremo sul paulista!",
         story:
-            "No 3º ano, a viagem costuma ter um clima especial. Campos do Jordão é famosa pelo frio, " +
-            "comida boa e passeio. Leva casaco de verdade e aproveita pra curtir com a galera — " +
-            "porque depois cada um vai pra um lado.",
+            "Quando finalmente virarem gente e se tornarem Vets, irão conhecer o PETAR, que assim " +
+            "Quando finalmente virarem gente e se tornarem Vets, irão conhecer o PETAR, que assim como os outros passeios é memorável, e aproveitem bastante, pois vai ser o ultimo. " ,
         gallery: [
-            "img/campos_1.jpg",
-            "img/campos_2.jpg",
-            "img/campos_3.jpg"
+            "../paginas/imgs/viagens/petar_1.jpg",
+            "../paginas/imgs/viagens/petar_2.png",
+            "../paginas/imgs/viagens/petar_3.png"
         ]
     }
 ];
@@ -282,3 +281,8 @@ window.addEventListener("keydown", (e) => {
         closeImageOverlay();
     }
 });
+
+
+
+
+
