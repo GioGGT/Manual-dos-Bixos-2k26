@@ -1,27 +1,27 @@
+/*-- Animação de Abertura--*/
 const botao = document.getElementById("btnIniciar");
 const anima = document.getElementById("anima");
 
+window.addEventListener("pageshow", (event) => {
+    anima.classList.remove("ativo");
+});
+
 botao.addEventListener("click", () => {
+
     anima.classList.add("ativo");
 
-    const handleTransition = (event) => {
-        if (event.propertyName === "transform") {
+
+    const redirecionar = (event) => {
+        if (!event || event.propertyName === "transform") {
             window.location.href = "paginas/home.html";
         }
     };
 
-    anima.addEventListener("transitionend", handleTransition, { once: true });
+    anima.addEventListener("transitionend", redirecionar, { once: true });
 
-    // Fallback de segurança: se após 1s não mudou de página, força a mudança
     setTimeout(() => {
-        window.location.href = "paginas/home.html";
-    }, 1000);
-});
-
-window.addEventListener("pageshow", (event) => {
-    if (event.persisted) {
-        anima.classList.remove("ativo");
-    }
+        redirecionar();
+    }, 900);
 });
 
 /*-- Animação Texto --*/

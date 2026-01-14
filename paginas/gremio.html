@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="header.css">
+    <title>Grêmio Estudantil</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Boogaloo&family=Lilita+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: transparent;
+        }
+
+        body {
+            background-color: #181051;
+            position: relative;
+            z-index: -2;
+        }
+
+        .mega {
+            width: 400px;
+            margin: 50px 0px 30px -80px;
+            transform: rotate(20deg);
+            position: absolute;
+            z-index: 1;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 30px 30px 30px;
+            position: relative;
+            z-index: -1;
+            gap: 60px
+        }
+
+        section img {
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        .texto {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex: 50%;
+        }
+
+        p {
+            margin-left: 40px;
+            color: white;
+            font-family: Nunito Sans;
+            font-weight: 600;
+            text-align: justify;
+            font-size: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        .intro {
+            flex: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            display: flex;
+            width: 90%;
+            margin-top: 160px;
+        }
+
+        h1 {
+            color: white;
+            font-family: Lilita One;
+            margin: 0;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-size: clamp(1.7rem, 5vw, 3.5rem);
+        }
+
+
+        h2 {
+            color: #ffcc00;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+        }
+
+        .outras {
+            margin: 0;
+        }
+
+        .foto img {
+            width: 100%;
+            border-radius: 30px;
+            margin: 0;
+            border: 10px double #ffcc00;
+        }
+
+        .foto {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        } 
+
+        .outras p{
+            margin-left: 60px;
+        }
+
+        @media (max-width: 780px) {
+
+            main {
+                gap: 30px;
+            }
+
+            .intro {
+                margin: 60px 0px 40px 0px;
+            }
+
+            .mega {
+                width: 35%;
+                margin: 60px 0px 30px -40px;
+                transform: rotate(30deg);
+            }
+
+            section img {
+                width: 70%;
+            }
+
+            section {
+                margin: 0;
+                width: 100%;
+                flex-direction: column;
+            }
+
+            p,
+            .outras p {
+                margin: 0;
+                width: 90%;
+            }
+
+            .outras {
+                flex-direction: column;
+            }
+
+            .foto img {
+                margin-bottom: 30px;
+                width: 70%;
+            }
+
+            .foto {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            section img {
+                width: 100%;
+            }
+
+            .mega {
+                width: 40%;
+                margin: 60px 0px 30px -30px;
+                transform: rotate(30deg);
+            }
+
+            .intro {
+                margin: 70px 0px 40px 0px;
+            }
+
+            p,
+            .outras p {
+                width: 100%;
+            }
+
+            .foto img {
+                width: 100%;
+            }
+
+            h1{
+                font-size: clamp(1.9rem, 5vw, 3.5rem);
+            }
+
+        }
+
+        #seta-link {
+            margin-left: auto;
+        }
+
+        #seta {
+            fill: #FFDE59;
+            height: 60px;
+            width: 60px;
+        }
+
+        #seta:hover {
+            cursor: pointer;
+            transition: 0.3s ease;
+            height: 63px;
+            width: 63px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="imgs/gremio/gremio-mega.png" class="mega">
+    <header>
+        <a href="home.html" class="link-img"><img src="../logos/logoheader.png"></a>
+        <input type="checkbox" id="barralateral-active">
+        <label for="barralateral-active" class="open">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </label>
+        <label for="barralateral-active" id="overlay"></label>
+        <div class="links">
+            <label for="barralateral-active" class="open">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#1f1f1f">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
+            <a href="home.html" class="link-header">Home</a>
+            <a href="apelidos.html" class="link-header">Apelidos</a>
+            <a href="apm.html" class="link-header">APM</a>
+            <a href="eventos.html" class="link-header">Eventos</a>
+            <a href="rodas.html" class="link-header">Rodas</a>
+            <a href="gremio.html" class="link-header">Grêmio</a>
+            <a href="esportes.html" class="link-header">Esportes</a>
+            <a href="luta.html" class="link-header">Luta Estudantil</a>
+            <a href="viagens.html" class="link-header">Viagens</a>
+            <a href="arte.html" class="link-header">Música & Arte</a>
+            <a href="correio.html" class="link-header">Correio Elegante</a>
+            <a href="cursos.html" class="link-header">Cursos</a>
+            <a href="redes.html" class="link-header">Redes & NSA</a>
+            <a href="mapa.html" class="link-header">Mapa do Câmpus</a>
+            <a href="créditos.html" class="link-header">Créditos</a>
+            <a href="../index.html" class="link-header">Fechar Manual</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="intro">
+                <h1>O Grêmio Estudantil<br> da ETESP
+                    <h2>A voz oficial dos estudantes</h2>
+                    <img src="imgs/gremio/gremio-intro.png">
+            </div>
+            <div class="texto">
+                <p><mark
+                        style=" padding: 3px; background-color: #ffcc00; border-radius: 10px; box-shadow: -5px 5px 0px 3px white; border: 2px solid black;"><strong>
+                            &nbsp;&nbsp;O que é o Grêmio Estudantil?&nbsp;&nbsp;</strong>
+                    </mark><br><br>
+
+                    Se você acha que o Grêmio é só “um grupo que faz evento”, já começa esquecendo isso.
+                    O Grêmio Estudantil é a entidade máxima e única de representação de TODOS OS ALUNOS DA ETESP!!
+                    Ele existe por lei federal, é 100% autônomo, independente da direção, e tem o direito de:<br><br>
+                    - Representar os estudantes em qualquer assunto ou reunião da escola<br>
+                    - Criar projetos, eventos, ações culturais, esportivas e políticas<br>
+                    - Defender os direitos dos alunos com total liberdade<br>
+                    - Participar oficialmente das decisões da escola<br>
+                    📌 Todo aluno da ETESP é representado pelo Grêmio.</p>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G2.jpeg">
+            </div>
+            <div class="texto">
+                <p>Um novo começo: o Grêmio voltou com tudo em 2025 Durante muitos anos, o Grêmio da ETESP não esteve
+                    ativo. Em 2025, isso mudou. Nossa gestão reativou o Grêmio do zero e transformou ele em um dos mais
+                    ativos, presentes e influentes da história da ETESP. Em apenas um ano, o Grêmio passou a estar:<br>
+                    Dentro da escola<br>
+                    Fora da escola<br>
+                    Nas redes<br>
+                    Nos debates<br>
+                    Nas decisões<br> E principalmente: ao lado dos
+                    alunos.</p>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G10.jpeg">
+            </div>
+            <div class="texto">
+                <p>🚀 O que o Grêmio já fez (Gestão 2025)
+                    Sim, tudo isso foi feito em 8 meses de mandato👇<br><br>
+
+                    🎬 Cultura, lazer e vida estudantil
+                    CINETESP (cinema na escola)<br>
+                    ETESP Friends e Café Comunitário<br>
+                    Campeonato de Clash Royale com premiação<br>
+                    Saída ao Horto Florestal com piquenique comunitário<br>
+                    Roda de Capoeira na escola<br>
+                    Exposições de Artes dos Alunos (2 edições)<br>
+                    Clube do Livro e Clube de Crochê<br>
+                    Árvore de Natal oficial do Grêmio (patrimônio para os próximos anos)</p>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G5.jpeg">
+            </div>
+            <div class="texto">
+                <p>📚 Apoio aos estudos<br>
+                    Monitorias de Matemática e Física, em parceria com alunos da USP<br>
+                    Visitação e Representação da ETESP em cursinho pré-vestibulinho</p>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G7.jpeg">
+            </div>
+            <div class="texto">
+                <p>📱 Comunicação e identidade estudantil<br>
+                    Redes sociais do Grêmio ativas e atualizadas<br>
+                    Jornal do Grêmio em Reels<br>
+                    Criação do Mural Oficial do Grêmio Estudantil na escola</p>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G8.jpeg">
+            </div>
+            <div class="texto">
+                <p>✊ Representação, política e direitos dos estudantes<br>
+                    Conquista do assento do Grêmio no Conselho de Escola<br>
+                    Reunião oficial com a Superintendência do Centro Paula Souza<br>
+                    Documento solicitando ampliação da representação estudantil<br>
+                    Participação em plenária da UMES<br>
+                    Elaboração e organização de dossiê estudantil<br>
+                    Manifestação Estudantil de 14 de Agosto<br>
+                    Oficina de cartazes para o ato<br>
+                    Palestra com o Deputado Guilherme Cortez<br>
+                    Oficina de Teatro com a UMES<br>
+                    Convite para o Congresso Nacional da UBES<br>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G9.jpeg">
+            </div>
+            <div class="texto">
+                <p>🤝 Solidariedade e comunidade
+                    Kit de limpeza em todas as salas
+                    Rifa do Grêmio Estudantil
+                    Arrecadação de roupas brinquedos</p>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G3.jpeg">
+            </div>
+            <div class="texto">
+                <p>👑 Por que o Grêmio é diferente?
+                    Porque o Grêmio é de todos os alunos.
+                    Não importa:<br>
+                    Seu gênero<br>
+                    Sua etnia<br>
+                    Sua classe social<br>
+                    👉 Se você é aluno da ETESP, o Grêmio te representa.
+                    E mais:<br>
+                    O Grêmio não é um grupo fechado<br>
+                    Qualquer aluno pode participar<br>
+                    Qualquer aluno pode montar uma chapa e concorrer às eleições<br>
+                    Aqui, o Grêmio não escolhe os alunos.<br>
+                    👉 Os alunos escolhem o Grêmio.</p>
+            </div>
+        </section>
+        <section class="outras">
+            <div class="foto">
+                <img src="imgs/gremio/G6.jpeg">
+            </div>
+            <div class="texto">
+                <p>🔥 Quer fazer parte?
+                    Se você:<br>
+                    Quer mudar a escola<br>
+                    Quer criar projetos<br>
+                    Quer eventos, cultura e voz<br>
+                    Quer aprender liderança de verdade<br>
+                    👉 O Grêmio é o SEU LUGAR!<br>
+                    O Grêmio Estudantil da ETESP não é só ativo.
+                    Ele é presente, forte, representativo e gigante.
+                    E agora, bix@…<br>
+                    a história também é sua!📢</p>
+            </div>
+        </section>
+        <a id="seta-link" href="esportes.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="seta">
+                <path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" />
+            </svg></a>
+    </main>
+</body>
+
+</html>
