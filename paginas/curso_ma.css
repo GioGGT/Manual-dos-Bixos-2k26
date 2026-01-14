@@ -21,10 +21,10 @@
 
 .leaf{
     position: absolute;
-    top: -5%;
+    top: -25%;
     aspect-ratio: 529 / 472;
     animation: 
-    fall 24s linear forwards;
+    fall 30s linear forwards;
     transform: rotate(var(--r)) scaleX(-1);
     filter: brightness(.9) saturate(.5);
     opacity: .5;
