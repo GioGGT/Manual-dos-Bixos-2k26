@@ -5,7 +5,7 @@ function pato(){
         return;
     }
     const quack = [new Audio("imgs/pp/quack1.mp3"), new Audio("imgs/pp/quack2.mp3"), new Audio("imgs/pp/quack3.mp3")];
-    const falas = ["Isso é um texto com palavras muito longas que podem ser hifenizadas automaticamente."]
+    const falas = ["Seja professor do PP!"]
     p.className = "texto";
     p.textContent = falas[Math.floor(Math.random() * falas.length)]
     p.style.left = "48%";
