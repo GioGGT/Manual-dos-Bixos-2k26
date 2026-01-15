@@ -2,6 +2,9 @@ const lc = document.getElementById('leafCont');
 
 function leaf() {
     const l = document.createElement("img");
+    if(lc.children.length > 50){
+        return
+    }
     const type = Math.floor(Math.random() * 2);
 
     l.className = "leaf";
@@ -30,4 +33,5 @@ function leaf() {
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
 
