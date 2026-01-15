@@ -15,7 +15,7 @@ header {
 /* ======= SUA SETA ======= */
 #seta-link {
     display: flex;
-    justify-content: flex-end;
+    float: right;
     margin: 10px 0;
 }
 
@@ -97,7 +97,7 @@ main {
     color: var(--v-muted);
     font-size: 17px;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
 }
 
 /* carrossel */

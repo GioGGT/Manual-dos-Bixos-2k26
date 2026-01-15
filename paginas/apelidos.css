@@ -44,15 +44,15 @@ body {
 }
 
 .topo h1 {
-    font-family: 'Boogaloo ', cursive;
+    font-family: 'Boogaloo';
     color: #CB6CE6;
-    font-size: 34px;
+    font-size: 40px;
     margin-top: 0;
     margin-bottom: 4px;
 }
 
 .topo h2 {
-    font-family: 'Boogaloo', cursive;
+    font-family: 'Boogaloo';
     font-size: 15px;
     letter-spacing: 1.8px;
     color: #6b3d75;
