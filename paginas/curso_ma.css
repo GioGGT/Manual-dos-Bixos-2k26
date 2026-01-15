@@ -56,7 +56,7 @@ img {
 
 .leaf {
     position: absolute;
-    top: -35%;
+    top: -55%;
     animation:
         fall var(--t) linear forwards,
         sway var(--s) ease-in-out infinite;
