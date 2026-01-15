@@ -68,6 +68,7 @@ img {
 @keyframes fall {
     to {
         transform: translate3d(var(--x), var(--h), 0) rotate(var(--r));
+        opacity: 0;
     }
 }
 
