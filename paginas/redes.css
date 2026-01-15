@@ -1,39 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Autour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-body{
+
+body {
     background-color: #f8eefe;
     margin: 0;
 }
-header{
+
+header {
     background-color: transparent;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
-section{
+
+section {
     display: flex;
     width: 95%;
     margin: 0 auto;
-    gap:20px;
-    margin-top: 30px;
+    gap: 20px;
 }
 
-.content{
-    flex:1;
+.content {
+    flex: 1;
     min-height: 150px;
     border-radius: 20px;
     padding: 5px;
     text-align: center;
 }
 
-.content h1{
+.content h1 {
     font-family: 'Architects Daughter', cursive;
     color: #80109f;
     font-size: 3vw;
     margin: 10px;
 }
-.content p{
+
+.content p {
     font-family: 'Autour One', cursive;
     color: #713582;
     font-size: 1.2vw;
@@ -41,19 +46,40 @@ section{
     padding: 4px 10px;
     text-align: left;
 }
-.content img{
+
+.content img {
     width: 90%;
 }
-.roxo{background-color: #e3b8ee;}
-.branco{background-color: #ffffff;}
-.preto{background-color: black;}
-.solo{width: 60%;}
-.sublinhar{text-decoration: underline;}
-.azul{background-color: rgb(14, 43, 75);}
-.spotted{
+
+.roxo {
+    background-color: #e3b8ee;
+}
+
+.branco {
+    background-color: #ffffff;
+}
+
+.preto {
+    background-color: black;
+}
+
+.solo {
+    width: 60%;
+}
+
+.sublinhar {
+    text-decoration: underline;
+}
+
+.azul {
+    background-color: rgb(14, 43, 75);
+}
+
+.spotted {
     box-shadow: 0 0 18px 8px #FEFCB6;
 }
-.spotted p{
+
+.spotted p {
     background: linear-gradient(180deg, #FEFCB6, #FBE675);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -63,7 +89,8 @@ section{
     font-weight: 400;
     font-style: normal;
 }
-.icone{
+
+.icone {
     align-self: right;
     color: white;
     text-decoration: none;
@@ -73,75 +100,122 @@ section{
     padding-left: 10px;
     padding-bottom: 10px;
 }
-.dormindo{
+
+.dormindo {
     display: flex;
     flex-direction: column;
 }
-.dormindo p, .dormindo h1{
-  color: rgb(255, 255, 255);  
+
+.dormindo p,
+.dormindo h1 {
+    color: rgb(255, 255, 255);
 }
-.atletica p, .atletica h1{
+
+.atletica p,
+.atletica h1 {
     color: black;
 }
-.atletica img{
+
+.atletica img {
     width: 50%;
 }
-.atletica{
+
+.atletica {
     border: 3px solid rgb(238, 250, 7);
     outline: 3px solid black;
     outline-offset: 4px;
 }
-.ofc{
-    border: 3px solid rgb(83, 83, 244) ;
+
+.ofc {
+    border: 3px solid rgb(83, 83, 244);
     outline: 3px solid purple;
     outline-offset: 4px;
 }
-.ofc h1, .ofc p{
-    color:black;
-}
-.apmI{
-    display: flex;
-    align-items: center;
-}
-.apmI a{
-    color: black;
-}
-.apmI img{
-    width: 30%;
-}
-.nsa{
-    background-color: #a2a2a2;
-    border: 3px solid rgb(83, 83, 244) ;
-    outline: 3px solid black;
-    outline-offset: 4px;
-}
-.nsa img{
-    width: 50%;
-}
-.nsa p, .nsa h1{
+
+.ofc h1,
+.ofc p {
     color: black;
 }
 
-@media (max-width: 768px){
-    section{
+.apmI {
+    display: flex;
+    align-items: center;
+}
+
+.apmI a {
+    color: black;
+}
+
+.apmI img {
+    width: 30%;
+}
+
+.nsa {
+    background-color: #a2a2a2;
+    border: 3px solid rgb(83, 83, 244);
+    outline: 3px solid black;
+    outline-offset: 4px;
+}
+
+.nsa img {
+    width: 50%;
+}
+
+.nsa p,
+.nsa h1 {
+    color: black;
+}
+
+#seta-link {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#seta {
+    fill: #FFDE59;
+    height: 60px;
+    width: 60px;
+}
+
+#seta:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 63px;
+    width: 63px;
+}
+
+
+@media (max-width: 768px) {
+
+    .solo {
+        width: 90%;
+    }
+
+    section {
         display: flex;
         flex-direction: column;
         min-height: 50px;
     }
-    .atletica img{
+
+    .atletica img {
         width: 30%;
     }
-    .atletica{
+
+    .atletica {
         align-items: center;
         min-height: 50px;
     }
-    .content{
+
+    .content {
         min-height: 50px;
     }
-    .content p{
-        font-size: 2vw;
+
+    .content p {
+        font-size: 3vw;
     }
-    .content h1{
-        font-size: 4vw;
+
+    .content h1 {
+        font-size: 5vw;
     }
+
 }
