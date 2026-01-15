@@ -7,7 +7,7 @@ function leaf(){
     l.style.setProperty("--r", -20 + "deg");
     l.style.left = Math.floor(Math.random()*100) + "%"
     l.style.height = Math.floor(Math.random()*60) + 60 + "px"
-    l.style.setProperty("--h", Math.floor(Math.random() * (30 - 5 + 1)) + 105 + "vh")
+    l.style.setProperty("--h", Math.floor(Math.random() * (30 - 5 + 1)) + 125 + "vh")
     lc.appendChild(l);
     setTimeout(leaf, 2000)
     l.addEventListener("animationend", () => {
@@ -17,5 +17,6 @@ function leaf(){
 
 
 document.addEventListener("DOMContentLoaded", () =>{leaf()})
+
 
 
