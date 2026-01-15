@@ -74,7 +74,11 @@ main {
 .main_correio {
     padding: 20px 40px;
     text-align: center;
-    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .main_section h1 {
