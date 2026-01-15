@@ -15,21 +15,21 @@
     font-style: normal;
 }
 
- ::-webkit-scrollbar {
-            width: 10px;
-        }
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-        /* fundo da barra */
-        ::-webkit-scrollbar-track {
-            background: #ffffff;
-                /* cor do fundo */
-        }
+/* fundo da barra */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* cor do fundo */
+}
 
-        ::-webkit-scrollbar-thumb {
-            background: #0000aa;
-            /* cor principal */
-            border-radius: 20px;
-        }
+::-webkit-scrollbar-thumb {
+    background: #0000aa;
+    /* cor principal */
+    border-radius: 20px;
+}
 
 * {
     margin: 0;
@@ -37,7 +37,7 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -389,7 +389,6 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
 }
 
@@ -400,9 +399,8 @@ main {
 }
 
 .txt-arquivo {
-    background: white;
-    width: 90%;
-    max-width: 600px;
+    background: rgb(255, 255, 255);
+    width: 50%;
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -513,7 +511,6 @@ main {
 
 .encerrar {
     width: 100%;
-    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -808,7 +805,7 @@ main {
     }
 
     .main h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .main h3 {
@@ -828,7 +825,7 @@ main {
         font-size: 1.5rem;
     }
 
-    .prof{
+    .prof {
         height: 25vh;
     }
 
@@ -898,7 +895,7 @@ main {
         width: 80%;
     }
 
-    .mito{
+    .mito {
         width: 120% !important;
     }
 
