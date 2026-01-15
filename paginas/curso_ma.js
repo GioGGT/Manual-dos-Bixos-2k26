@@ -25,8 +25,9 @@ function leaf() {
 
     l.addEventListener("animationend", () => l.remove());
 
-    setTimeout(leaf, 800);
+    setTimeout(leaf, 2000);
 
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
