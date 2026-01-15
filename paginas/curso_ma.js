@@ -2,6 +2,10 @@ const lc = document.getElementById('leafCont');
 
 function leaf() {
     const l = document.createElement("img");
+    if(lc.children.length > 50){
+        setTimeout(leaf, 2000);
+        return
+    }
     const type = Math.floor(Math.random() * 2);
 
     l.className = "leaf";
@@ -25,8 +29,11 @@ function leaf() {
 
     l.addEventListener("animationend", () => l.remove());
 
-    setTimeout(leaf, 800);
+    setTimeout(leaf, 2000);
 
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
+
+
