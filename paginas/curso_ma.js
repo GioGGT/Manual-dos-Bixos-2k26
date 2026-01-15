@@ -3,6 +3,7 @@ const lc = document.getElementById('leafCont');
 function leaf() {
     const l = document.createElement("img");
     if(lc.children.length > 50){
+        setTimeout(leaf, 2000);
         return
     }
     const type = Math.floor(Math.random() * 2);
@@ -33,5 +34,6 @@ function leaf() {
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
 
 
