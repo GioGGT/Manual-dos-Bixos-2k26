@@ -1,151 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Autor+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
 :root {
-    --verde-escuro: #6F7F4D;
+    --verde-escuro: #546334;
     --verde-claro: #AAC863;
     --teal: #1CA3A8;
     --laranja: #F08741;
 
-    --bg: #8fa06a; /* FUNDO VERDE */
-    --card: #f6f4ec; /* papel natural */
+    --bg: #8fa06a;
+    --card: #f6f4ec;
     --texto: #2b2b2b;
 }
 
-#leafCont{
-    position: fixed;
-    pointer-events: none;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-}
-
-.leaf{
-    position: absolute;
-    top: -25%;
-    aspect-ratio: 529 / 472;
-    animation: 
-    fall 30s linear forwards;
-    transform: rotate(var(--r)) scaleX(-1);
-    filter: brightness(.9) saturate(.5);
-    opacity: .5;
-    transform-origin: 20% 50%;
-}
-
-@keyframes fall{
-    to {
-        transform: translateY(var(--h));
-    }
-}
-
-p{
-    font-family: "Nunito", sans-serif;
-}
-
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BASE */
 body {
     background: var(--bg);
-    font-family: 'Autor One', sans-serif;
+    font-family: 'Fredoka';
     color: var(--texto);
     line-height: 1.8;
 }
 
-/* IMAGENS */
+p {
+    font-family: 'Fredoka';
+    font-size: 1.05rem;
+}
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 22px;
 }
 
-/* HEADER */
-.header-ma {
-    padding: 20px 5%;
-    background: #e7eadc;
-    box-shadow: 0 4px 15px rgba(0,0,0,.12);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.sobre-img img,
+.topicos-grid img,
+.evento-content img,
+.professor-card img {
+    border-radius: 26px;
+    border: 4px solid var(--verde-claro);
+    outline: 3px solid #e6eadb;
+    outline-offset: -10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.18);
+    margin: 0 auto;
 }
 
-.header-ma img {
-    height: 50px;
+#leafCont {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
 }
 
-/* HERO */
+.leaf {
+    position: absolute;
+    top: -55%;
+    animation:
+        fall var(--t) linear forwards,
+        sway var(--s) ease-in-out infinite;
+    transform: rotate(var(--r)) scale(var(--sc));
+    opacity: var(--o);
+    filter: blur(var(--b));
+}
+
+@keyframes fall {
+    to {
+        transform: translate3d(var(--x), var(--h), 0) rotate(var(--r));
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0% { margin-left: -8px; }
+    50% { margin-left: 8px; }
+    100% { margin-left: -8px; }
+}
+
+.section-title.title-white {
+    text-shadow:
+        1px 1px 0 var(--verde-claro),
+        -1px 1px 0 var(--verde-claro),
+        0 2px 4px rgba(0,0,0,.15);
+}
+
+.section-title {
+    text-shadow:
+        1px 1px 0 var(--laranja),
+        -1px 1px 0 var(--laranja),
+        0 2px 4px rgba(0,0,0,.15);
+}
+
+.boasVindas {
+    font-size: 30px;
+}
+
 .hero {
-    min-height: 75vh;
-    background: var(--verde-escuro);
+    min-height: 65vh;
+    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
     padding: 80px 20px;
-    position: relative;
-    overflow: hidden;
 }
 
-/* MANCHAS ORGÂNICAS */
-.hero::before,
-.hero::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.25;
-}
-
-.hero::before {
-    width: 420px;
-    height: 420px;
-    background: var(--verde-claro);
-    top: -160px;
-    left: -120px;
-}
-
-.hero::after {
-    width: 320px;
-    height: 320px;
-    background: var(--teal);
-    bottom: -140px;
-    right: -100px;
-}
-
-.hero h3,
 .hero h1 {
-    position: relative;
-    z-index: 2;
+    font-family: 'Fredoka';
+    font-size: clamp(3.2rem, 8vw, 5.5rem);
+    color: white;
+    text-shadow:
+        -2px -2px 0 #6F7F4D,
+         2px -2px 0 #6F7F4D,
+        -2px  2px 0 #6F7F4D,
+         2px  2px 0 #6F7F4D;    
 }
 
 .hero h3 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-family: 'Fredoka';
+    color: #4a5a32;
     margin-bottom: 15px;
 }
 
-.hero h1 {
-    font-family: 'Fredoka', sans-serif;
-    font-size: clamp(3.5rem, 8vw, 6rem);
-    letter-spacing: 3px;
-}
-
-/* SECTIONS */
 section {
     max-width: 1200px;
     margin: 0 auto 90px;
     padding: 60px 5%;
 }
 
-/* TITLES */
 .section-title {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Fredoka';
     font-size: clamp(2rem, 4vw, 2.8rem);
     color: var(--verde-escuro);
     margin-bottom: 35px;
@@ -164,46 +150,30 @@ section {
     border-radius: 20px;
 }
 
-/* CARTÕES / PAPEL */
 .section-card,
 .topico-card,
 .professor-card {
     background: var(--card);
     border-radius: 26px;
-    box-shadow:
-        0 8px 25px rgba(0,0,0,.12),
-        inset 0 0 0 2px rgba(255,255,255,.4);
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
 }
 
-/* INTRO */
 .section-card {
     padding: 55px;
 }
 
 .sobre {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
     gap: 50px;
     align-items: center;
 }
 
-.sobre-texto p {
-    font-size: 1.05rem;
-    margin-bottom: 22px;
-}
-
-.sobre-img img {
-    max-height: 420px;
-    object-fit: cover;
-    border: 5px solid var(--verde-claro);
-    box-shadow: 0 10px 30px rgba(0,0,0,.15);
-}
-
-/* TOPICOS */
 .topicos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1.7fr 1fr;
     gap: 30px;
+    align-items: center;
 }
 
 .topico-card {
@@ -211,14 +181,6 @@ section {
     border-left: 7px solid var(--verde-claro);
 }
 
-/* IMAGENS NOS TÓPICOS */
-.topicos-grid img {
-    max-height: 280px;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0,0,0,.18);
-}
-
-/* EVENTOS */
 .evento-destaque {
     background: var(--teal);
     color: white;
@@ -237,19 +199,12 @@ section {
 
 .evento-content {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.7fr 1fr;
     gap: 40px;
     align-items: center;
     margin-top: 30px;
 }
 
-.evento-content img {
-    max-height: 320px;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0,0,0,.25);
-}
-
-/* PROFESSORES */
 .prof-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -262,18 +217,16 @@ section {
 }
 
 .professor-card h2 {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Fredoka';
     color: var(--laranja);
     margin-bottom: 15px;
 }
 
 .professor-card img {
     max-height: 260px;
-    object-fit: cover;
-    margin: 18px 0 22px;
+    margin: 18px auto 22px;
 }
 
-/* ENCERRAMENTO */
 .encerrar {
     background: var(--laranja);
     color: white;
@@ -284,7 +237,7 @@ section {
 }
 
 .encerrar h1 {
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Fredoka';
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     margin-bottom: 30px;
 }
@@ -297,14 +250,21 @@ section {
     color: var(--laranja);
     text-decoration: none;
     font-weight: 700;
-    box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 
-/* RESPONSIVO */
-@media (max-width: 968px) {
+@media (max-width: 900px) {
     .sobre,
+    .topicos-grid,
     .evento-content {
         grid-template-columns: 1fr;
+    }
+
+    .sobre-img img,
+    .topicos-grid img,
+    .evento-content img {
+        order: 2;
+        margin-top: 25px;
+        max-height: 240px;
     }
 }
 
@@ -313,15 +273,12 @@ section {
         padding: 40px 5%;
         margin-bottom: 60px;
     }
+}
 
-    .topicos-grid,
-    .prof-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .sobre-img img,
-    .evento-content img,
-    .topicos-grid img {
-        max-height: 220px;
+@media (max-width: 768px) {
+    .leaf {
+        transform: scale(0.6) rotate(var(--r));
+        opacity: calc(var(--o) * 0.7);
+        filter: blur(calc(var(--b) * 0.6));
     }
 }

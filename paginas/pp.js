@@ -5,7 +5,7 @@ function pato(){
         return;
     }
     const quack = [new Audio("imgs/pp/quack1.mp3"), new Audio("imgs/pp/quack2.mp3"), new Audio("imgs/pp/quack3.mp3")];
-    const falas = ["Seja professor do PP!"]
+    const falas = ["Seja professor do PP!", "Venha construir educação popular, ouvir boas fofocas e comer bolo pedagógico com a gente 🎂", "Bolos sabores: célula e terra"]
     p.className = "texto";
     p.textContent = falas[Math.floor(Math.random() * falas.length)]
     p.style.left = "48%";
@@ -23,3 +23,4 @@ function pato(){
     })
 }
     
+

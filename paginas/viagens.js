@@ -3,7 +3,7 @@ const trips = [
     {
         id: "paranapiacaba",
         year: "1º ano",
-        title: "PARANAPIACABA",
+        title: "PARANAPIACABA 🚞 ",
         badge: "Paranapiacaba • 1º ano",
         cover: "../paginas/imgs/viagens/paranapiacaba_capa.jpg",
         teaser: "Paranapiacaba, distrito com forte ação ferroviária inglesa,"+ 
@@ -20,7 +20,7 @@ const trips = [
     {
         id: "santos",
         year: "1º ano",
-        title: "SANTOS",
+        title: "SANTOS 🌊⚓",
         badge: "Santos • 1º ano",
         cover: "../paginas/imgs/viagens/santos_capa.png",
         teaser: "Localizado na Baixada Santista, região litorânea de São Paulo, com museus históricos do Café e do grande Rei Pelé!!",
@@ -37,7 +37,7 @@ const trips = [
     {
         id: "cananeia",
         year: "2º ano",
-        title: "CANANÉIA",
+        title: "CANANÉIA 🏝️🐟",
         badge: "Cananéia • 2º ano",
         cover: "../paginas/imgs/viagens/cananeia_capa.jpg",
         teaser: "Já imaginou passar 3 dias em um chalé em frente à praia, em uma ilha, com os amigos?",
@@ -54,13 +54,13 @@ const trips = [
     {
         id: "petar",
         year: "3º ano",
-        title: "PETAR",
+        title: "PETAR 🦇🪨",
         badge: "Petar • 3º ano",
         cover: "../paginas/imgs/viagens/petar_capa.png",
         teaser: "Parque Estadual Turístico do Alto Ribeira. e se aventurar nas cavernas e paisagens lindas do extremo sul paulista!",
         story:
-            "Quando finalmente virarem gente e se tornarem Vets, irão conhecer o PETAR, que assim " +
-            "Quando finalmente virarem gente e se tornarem Vets, irão conhecer o PETAR, que assim como os outros passeios é memorável, e aproveitem bastante, pois vai ser o ultimo. " ,
+            "Quando finalmente virarem gente e se tornarem Vets, irão conhecer o PETAR, " +
+            "que assim como os outros passeios é memorável, e aproveitem bastante, pois vai ser o ultimo. " ,
         gallery: [
             "../paginas/imgs/viagens/petar_1.jpg",
             "../paginas/imgs/viagens/petar_2.png",
