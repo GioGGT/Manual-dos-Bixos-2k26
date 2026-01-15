@@ -6,7 +6,7 @@ function leaf() {
   window.matchMedia("(pointer: coarse)").matches ||
   navigator.hardwareConcurrency <= 4;
     if(lc.children.length > 6 && lowPower){
-        setTimeout(leaf, 3000);
+        setTimeout(leaf, 5000);
         return
     }
     const type = Math.floor(Math.random() * 2);
@@ -32,11 +32,12 @@ function leaf() {
 
     l.addEventListener("animationend", () => l.remove());
 
-    setTimeout(leaf, lowPower? 3000 : 2000);
+    setTimeout(leaf, lowPower? 5000 : 2000);
 
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
 
 
 
