@@ -17,11 +17,11 @@
 
 <body>
     <header>
-        <a href="home.html" class="link-img"><img src="../logos/logoheader.png" alt="Logo"></a>
+        <a href="home.html" class="link-img"><img src="../imgs/ds/logo.png" alt="Logo"></a>
         <input type="checkbox" id="barralateral-active">
         <label for="barralateral-active" class="open">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" style="fill: #0000aa;" />
             </svg>
         </label>
         <label for="barralateral-active" id="overlay"></label>
@@ -104,155 +104,342 @@
 
         </div>
 
+        <div class="prof">
+            <h1> <span class="tags">&lt;h1&gt;</span>PROFESSORES<span class="tags">&lt;/h1&gt;</span></h1>
+        </div>
 
-        <section class="profs">
+        <div class="app-container">
+            <div class="title-bar">
+                <span class="title-text">Professores.exe</span>
+                <div class="window-buttons">
+                    <button class="window-btn minimize-btn">─</button>
+                    <button class="window-btn maximize-btn">□</button>
+                    <button class="window-btn">×</button>
+                </div>
+            </div>
 
-            <div class="professores">
-
-                <!-- Card 1 -->
-                <div class="card_Prof">
-                    <div class="cima">
-                        <span class="repo-name">Professores de DS</span>
-                        <span class="visibility">Public</span>
-                    </div>
-
-                    <div class="profImg">
-                        <img src="../imgs/ds/bombs.png" alt="Manual do Curso">
-                    </div>
-
-                    <div class="meio">
-                        <h3>Bombom</h3>
-                        <p>
-
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit repellat veniam quis
-                            dolorum nihil consequuntur nostrum consequatur, ullam perferendis ducimus. Officia
-                            necessitatibus cupiditate accusantium, cumque aspernatur iure perspiciatis blanditiis.
+            <div class="window-content">
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="professor-card">
+                        <h2 class="professor-name">Bombom</h2>
+                        <div class="professor-photo-container">
+                            <img src="../imgs/ds/bombs.png" alt="bb" class="professor-photo">
+                        </div>
+                        <p class="professor-description">
+                            Outro professor muito gente boa, divertido e rico (sim, ele já deu aula online direto de Las
+                            Vegas para o querido DS2k21). O Evandro é um verdadeiro especialista em Bitcoin e outras
+                            criptomoedas e também sobre hacking e coisas do tipo (as vezes dá um pouco de medo pra ser
+                            sincero). Não julguem muito os designs dele, às vezes, podem parecer meio feios, mas
+                            lembrem-se é ele quem vai avaliar o TCM de vocês (e daqui a pouco falaremos sobre isso).
+                            Evitem assuntos de política na aula dele, já que ele tem opiniões um pouco... controversas.
+                            Mas, se quiserem se divertir, podem arriscar começar o assunto e observar o caos se
+                            instaurando.
                         </p>
                     </div>
 
-                    <div class="baixo">
-                        <span class="lang html"></span> HTML
-                        <span class="lang css"></span> CSS
-                        <span class="lang js"></span> JavaScript
-                        <span class="status">⭐ 12 • 🍴 4</span>
+                    <!-- Card 2 -->
+                    <div class="professor-card">
+                        <h2 class="professor-name">Rodrigo de FI</h2>
+                        <div class="professor-photo-container">
+                            <img src="../imgs/ds/rodrigod.png" alt="Rodrigo" class="professor-photo">
+                        </div>
+                        <p class="professor-description">
+                            Um dos calvas mais legais do planeta (e não, ele não é o cara que roubou os esquilos, já
+                            confirmamos isso com ele!). O Rodrigo é um professor super gente boa, sempre disposto a
+                            ajudar os alunos. Pode conversar com ele sobre qualquer coisa relacionada à tecnologia, ele
+                            sabe muito e com certeza vai te dar ótimas dicas. Aproveitem bastante as piadinhas bestas
+                            que ele solta no meio das aulas e o jeito descontraído dele. São essas coisas que tornam as
+                            aulas únicas e divertidas. Ah, e preparem-se: vocês vão sentir muita saudade do Rodrigo
+                            quando terminarem o curso.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="professor-card">
+                        <h2 class="professor-name">Evandro</h2>
+                        <div class="professor-photo-container">
+                            <img src="../imgs/ds/e.png" alt="Professor 3" class="professor-photo">
+                        </div>
+                        <p class="professor-description">
+                            Outro professor muito gente boa, divertido e rico (sim, ele já deu aula online direto de Las
+                            Vegas para o querido DS2k21). O Evandro é um verdadeiro especialista em Bitcoin e outras
+                            criptomoedas e também sobre hacking e coisas do tipo (as vezes dá um pouco de medo pra ser
+                            sincero)
+                            Não julguem muito os designs dele, às vezes, podem parecer meio feios, mas lembrem-se é ele
+                            quem vai avaliar o TCM de vocês (e daqui a pouco falaremos sobre isso).
+                            Evitem assuntos de política na aula dele, já que ele tem opiniões um pouco… controversas.
+                            Mas, se quiserem se divertir, podem arriscar começar o assunto e observar o caos engraçado
+                            que pode surgir.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="professor-card">
+                        <h2 class="professor-name">Pinheiro</h2>
+                        <div class="professor-photo-container">
+                            <img src="../imgs/ds/p.png" alt="Professor 4" class="professor-photo">
+                        </div>
+                        <p class="professor-description">
+                            Bom, o que podemos falar do nosso querido Pinheiro? Acho que a principal coisa é: não deixem
+                            ele bravo, bixos! Essa é, sem dúvidas, a dica mais valiosa (por mais que seja difícil às
+                            vezes, mas eu confio em vocês!).
+                            <br>
+                            Evitem falar muito durante a aula dele, não mexam no computador sem a sua permissão (sério,
+                            não façam isso, por favor!), e procurem focar no que ele está ensinando. Quando forem tirar
+                            dúvidas ou comentar algo, tentem usar as palavras que ele utilizou na explicação.
+                            <br>
+                            No fim das contas, ele pode parecer meio complicado, mas se esforcem ao máximo para
+                            construir uma boa relação com ele. Isso vai fazer toda a diferença para vocês ao longo do
+                            curso. Conversem com ele sobre outros assuntos! Ele é bem divertido e gosta de conversar
+                            (ele torce para o Corinthians.)
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="professor-card">
+                        <h2 class="professor-name">Rubens</h2>
+                        <div class="professor-photo-container">
+                            <img src="../imgs/ds/r.png" alt="Professor 5" class="professor-photo">
+                        </div>
+                        <p class="professor-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="professor-card">
+                        <h2 class="professor-name">Betao</h2>
+                        <div class="professor-photo-container">
+                            <img src="../imgs/ds/b.png" alt="Professor 6" class="professor-photo">
+                        </div>
+                        <p class="professor-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Card 2 -->
-                <div class="card_Prof">
-                    <div class="cima">
-                        <span class="repo-name">Professores de DS</span>
-                        <span class="visibility">Public</span>
-                    </div>
+        <section class="trabalhos-section">
+            <h1>Trabalhos de DS (clique nas pastas!)</h1>
 
-                    <div class="profImg">
-                        <img src="../imgs/ds/b.png" alt="Manual do Curso">
-                    </div>
+            <div class="pastas-container">
 
-                    <div class="meio">
-                        <h3>Betão</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo vitae debitis, voluptates
-                            beatae illum nobis accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Tempore voluptatem provident unde animi ipsum reprehenderit dolorem vitae deserunt, dolore
-                            quibusdam saepe placeat optio, dolores beatae. Corporis dolorum ea dolores maxime. Vero sed
-                            quae, nobis pariatur ea culpa. Soluta officiis tenetur natus alias temporibus officia.
-                        </p>
-                    </div>
-
-                    <div class="baixo">
-                        <span class="lang html"></span> HTML
-                        <span class="lang css"></span> CSS
-                        <span class="lang js"></span> JavaScript
-                        <span class="status">⭐ 12 • 🍴 4</span>
-                    </div>
+                <div class="pasta" onclick="abrirArquivo('trabalho1')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Pasta">
+                    <p class="pasta-nome">TCM 01</p>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="card_Prof">
-                    <div class="cima">
-                        <span class="repo-name">manual-ds</span>
-                        <span class="visibility">Public</span>
-                    </div>
 
-                    <div class="profImg">
-                        <img src="../imgs/ds/e.png" alt="Manual do Curso">
-                    </div>
+                <div class="pasta" onclick="abrirArquivo('trabalho2')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Pasta">
+                    <p class="pasta-nome">TCM 02
 
-                    <div class="meio">
-                        <h3>Manual do Curso</h3>
-                        <p>
-                            Repositório com informações essenciais sobre o curso de
-                            Desenvolvimento de Sistemas, rotina, dicas e experiências.
-                        </p>
-                    </div>
-
-                    <div class="baixo">
-                        <span class="lang html"></span> HTML
-                        <span class="lang css"></span> CSS
-                        <span class="lang js"></span> JavaScript
-                        <span class="status">⭐ 12 • 🍴 4</span>
-                    </div>
+                    </p>
                 </div>
 
-                <!-- Card 4 -->
-                <div class="card_Prof">
-                    <div class="cima">
-                        <span class="repo-name">manual-ds</span>
-                        <span class="visibility">Public</span>
-                    </div>
 
-                    <div class="profImg">
-                        <img src="../imgs/ds/rodrigod.png" alt="Manual do Curso">
-                    </div>
+                <div class="pasta" onclick="abrirArquivo('trabalho3')">
+                    <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="Pasta">
+                    <p class="pasta-nome">TCC</p>
+                </div>
+            </div>
+        </section>
 
-                    <div class="meio">
-                        <h3>Manual do Curso</h3>
-                        <p>
-                            Repositório com informações essenciais sobre o curso de
-                            Desenvolvimento de Sistemas, rotina, dicas e experiências.
-                        </p>
-                    </div>
 
-                    <div class="baixo">
-                        <span class="lang html"></span> HTML
-                        <span class="lang css"></span> CSS
-                        <span class="lang js"></span> JavaScript
-                        <span class="status">⭐ 12 • 🍴 4</span>
-                    </div>
+        <div id="modal-trabalho1" class="modal" onclick="fecharArquivo('trabalho1')">
+            <div class="txt-arquivo" onclick="event.stopPropagation()">
+                <div class="txt-header">
+                    <span class="txt-titulo">trabalho_conclusão_modulo.txt</span>
+                    <button class="btn-fechar" onclick="fecharArquivo('trabalho1')">×</button>
+                </div>
+                <div class="txt-conteudo">TCM
+
+                    Descrição:
+                    O TCM (só o DS tem isso, então sintam-se privilegiados!). <br><br> O TCM consiste em criar um site
+                    com 25
+                    páginas (esse número pode mudar) sobre um tema que vocês escolherem, aplicando todo o conhecimento
+                    de programação web que foi ensinado ao longo do ano
+
+                    Tecnologias:
+                    - HTML
+                    - CSS
+                    - JavaScript
+
+                    Status: Desconhecido (por enquanto)
+                    Usuários ativos: 1</div>
+            </div>
+        </div>
+
+        <div id="modal-trabalho2" class="modal" onclick="fecharArquivo('trabalho2')">
+            <div class="txt-arquivo" onclick="event.stopPropagation()">
+                <div class="txt-header">
+                    <span class="txt-titulo">trabalho_app_mobile.txt</span>
+                    <button class="btn-fechar" onclick="fecharArquivo('trabalho2')">×</button>
+                </div>
+                <div class="txt-conteudo">APP MOBILE - DELIVERY DE ALIMENTOS
+
+                    Descrição:
+                    Aplicativo multiplataforma para delivery.
+
+                    Tecnologias:
+                    - React Native
+                    - TypeScript
+                    - Firebase
+                    - Google Maps API
+
+                    Funcionalidades:
+                    - Rastreamento em tempo real
+                    - Pagamento integrado
+                    - Notificações push
+                    - Sistema de avaliações
+
+                    Status: Publicado
+                    Downloads: 10.000+
+                    Avaliação: 4.7 estrelas</div>
+            </div>
+        </div>
+
+        <div id="modal-trabalho3" class="modal" onclick="fecharArquivo('trabalho3')">
+            <div class="txt-arquivo" onclick="event.stopPropagation()">
+                <div class="txt-header">
+                    <span class="txt-titulo">trabalho_api_rest.txt</span>
+                    <button class="btn-fechar" onclick="fecharArquivo('trabalho3')">×</button>
+                </div>
+                <div class="txt-conteudo">API REST - INTEGRAÇÃO EMPRESARIAL
+
+                    Descrição:
+                    API robusta para integração de sistemas.
+
+                    Tecnologias:
+                    - Node.js + Express
+                    - MongoDB
+                    - JWT
+                    - Docker
+
+                    Características:
+                    - Documentação Swagger
+                    - Testes automatizados
+                    - Rate limiting
+                    - Versionamento de API
+
+                    Status: Em produção
+                    Requisições/dia: 100.000+
+                    Tempo médio: 80ms</div>
+            </div>
+        </div>
+
+        <div class="prof" style="background-color: white;">
+            <h1 style="color: black;"> <span class="tags">&lt;h1&gt;</span>DS: A SALA MAIS UNIDA!!!<span
+                    class="tags">&lt;/h1&gt;</span></h1>
+        </div>
+
+        <section class="eventos">
+
+            <div class="expo">
+                <div class="expoL">
+                    <h1>DS Mitou</h1>
+                    <p>Quando a ETESP estava participando ativamente das manifestações de 2019 contra cortes na
+                        educação, uma história engraçada (ou lamentável?) aconteceu... Em um dia, foi marcado uma
+                        manifestação e o acordo é sempre muito claro: em dia de manifestação, ninguém vai para a escola.
+                        Mas, nesse belo dia, a sala de DS2018 decidiu ir para a escola em dia de manifestação. Logo após
+                        esse ato, eles postaram uma foto com a legenda "DS mitou". Isso não é algo para se orgulhar, mas
+                        com certeza entrou para a história de DS.</p>
+                </div>
+                <div class="expoR">
+                    <img src="../imgs/ds/dsMitou.png" class="mito" alt="">
+                </div>
+            </div>
+
+            <div class="expo">
+                <div class="expoL">
+                    <h1>Coleguismo</h1>
+                    <p>Termo inventado pelo DS2k22, o coleguismo é a essência de DS: a sala deve estar junto para tudo,
+                        até pra fazer merda. Então, nunca se esqueça que o trabalho em equipe é fundamental no curso!
+                    </p>
+                </div>
+                <div class="expoR">
+                    <img src="../imgs/ds/coleguismo.png" class="expoRM" alt="">
+                </div>
+            </div>
+
+            <div class="expo">
+                <div class="expoL">
+                    <h1>Dia Do BonE</h1>
+                    <p>Alguns dos eventos mais emocionantes do curso são os trabalhos do professor Borges, como o
+                        Documentário e o Jornal, onde cada aluno pode demonstrar suas habilidades
+                        na administração e no planejamento. <br> <br>
+                        O documentário é um trabalho mais geral, focado na história da ETESP e em tudo o
+                        que a escola tem de melhor. Nele, a gente pesquisa, organiza as informações e apresenta
+                        as qualidades da escola de uma forma criativa, o que acaba sendo uma experiência muito
+                        interessante e até gratificante. <br> <br>
+                        Já o Jornal do Borges é mais dinâmico e atual. Ele é focado em entrevistas, propagandas e nas
+                        principais atualidades do mundo. Contando com um banquete luxuoso digno do professor mais
+                        conceituado do curso de ADM, o jornal é uma dinâmica divertida e
+                        desafiadora na medida certa, que quase te faz esquecer que é mais uma tarefa da escola.
+                        No entanto, fazer esses trabalhos em algumas semanas é uma tarefa que mistura aprendizado,
+                        criatividade e um pouco de caos também! Trabalhar com cerca de 40 alunos significa trocar ideias
+                        o tempo todo, aprender a ouvir opiniões diferentes e dividir
+                        responsabilidades, mas o resultado sempre vale a pena!!</p>
                 </div>
 
-                <!-- Card 5 -->
-                <div class="card_Prof">
-                    <div class="cima">
-                        <span class="repo-name">manual-ds</span>
-                        <span class="visibility">Public</span>
-                    </div>
+                <div class="expoR">
+                    <img src="../imgs/ds/bone.png" class="expoRM" alt="">
+                </div>
+            </div>
 
-                    <div class="profImg">
-                        <img src="../imgs/ds/p.png" alt="Manual do Curso">
-                    </div>
+            <div class="expo" style="background-color: rgb(250, 123, 144);">
+                <div class="expoL">
+                    <h1>GIRLS DE DS </h1>
+                    <p>NN TENHAM MEDO!!! A GI É F***, MAS ELA NN MORDE. BRINCADEIRAS A PARTE, POR MAIS QUE SEJA UM CURSO
+                        MAJORITARIAMENTE DE MENINOS, AS MENINAS NN FICAM PRA TRÁS, TODAS SÃO MT INCRIVEIS. NN DESISTAM,
+                        SE UNAM E SEJAM MAIS FORTES, VCS CONSEGUEM GATAAAS!!!!</p>
+                </div>
 
-                    <div class="meio">
-                        <h3>Manual do Curso</h3>
-                        <p>
-                            Repositório com informações essenciais sobre o curso de
-                            Desenvolvimento de Sistemas, rotina, dicas e experiências.
-                        </p>
-                    </div>
-
-                    <div class="baixo">
-                        <span class="lang html"></span> HTML
-                        <span class="lang css"></span> CSS
-                        <span class="lang js"></span> JavaScript
-                        <span class="status">⭐ 12 • 🍴 4</span>
-                    </div>
+                <div class="expoR">
+                    <img src="../imgs/ds/girls.png" class="expoRM" alt="">
                 </div>
             </div>
 
         </section>
 
+        <div class="encerrar">
+            <h1 id="fim">Bom, acho que esse texto deu para vocês entenderem um pouco o que é ser DS, espero que vocês
+                gostem do curso, e também, não se esqueçam de viver o ensino médio de vocês, aproveitem bastante esses 3
+                anos que vocês estarão nessa escola, façam amizades, conversem, fique na praceta, estudem e tudo isso, e
+                qualquer dúvida pode perguntar a seus vets!</h1>
+            <a href="cursos.html"><button class="btn">Voltar ao manual</button></a>
+        </div>
+
+
+
+
     </main>
+
+    <script>
+        function abrirArquivo(trabalho) {
+            document.getElementById(`modal-${trabalho}`).classList.add('active');
+        }
+
+        function fecharArquivo(trabalho) {
+            document.getElementById(`modal-${trabalho}`).classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+            }
+        });
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
