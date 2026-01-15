@@ -83,6 +83,10 @@ header svg:hover {
     z-index: 9;
 }
 
+body:has(#barralateral-active:checked) {
+    overflow: hidden;
+}
+
 /* Hover <a> */
 
 .link-header:hover {

@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../favicon_io/apple-touch-icon.png">
+    <title>Viagens</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="viagens.css">
+</head>
+
+<body >
+
+   
+
+    <header>
+        <a href="home.html" class="link-img"><img src="../logos/logoheader.png"></a>
+        <input type="checkbox" id="barralateral-active">
+        <label for="barralateral-active" class="open">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </label>
+
+        <!-- overlay DO MENU (mantido!) -->
+        <label for="barralateral-active" id="overlay"></label>
+
+        <div class="links">
+            <label for="barralateral-active" class="open">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                     fill="#1f1f1f">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
+
+            <a href="home.html" class="link-header">Home</a>
+            <a href="apelidos.html" class="link-header">Apelidos</a>
+            <a href="apm.html" class="link-header">APM</a>
+            <a href="eventos.html" class="link-header">Eventos</a>
+            <a href="rodas.html" class="link-header">Rodas</a>
+            <a href="gremio.html" class="link-header">Grêmio</a>
+            <a href="esportes.html" class="link-header">Esportes</a>
+            <a href="luta.html" class="link-header">Luta Estudantil</a>
+            <a href="pp.html" class="link-header">Projeto Progressão</a>
+            <a href="viagens.html" class="link-header">Viagens</a>
+            <a href="arte.html" class="link-header">Música & Arte</a>
+            <a href="correio.html" class="link-header">Correio Elegante</a>
+            <a href="cursos.html" class="link-header">Cursos</a>
+            <a href="redes.html" class="link-header">Redes & NSA</a>
+            <a href="mapa.html" class="link-header">Mapa do Câmpus</a>
+            <a href="créditos.html" class="link-header">Créditos</a>
+            <a href="../index.html" class="link-header">Fechar Manual</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== CONTEÚDO DA PÁGINA VIAGENS ===== -->
+        <section class="v-container">
+            <div class="v-card v-intro">
+                <h1 class="v-title">Viagens✨</h1>
+                <p class="v-text">
+                    Para vocês, bixos, não acharem que é apenas estudo e trabalho, a ETESP também oferece passeios escolares incríveis!! 🚌💨
+                    E não se engane, podemos não ir para passeios convencionais como os das outras escolas, porém garantimos que são tão imperdíveis quanto!!! 😄🌍 que são tão imperdíveis quanto!!!
+
+                </p>
+                <p class="v-text">
+                    Mas, além dessas viagens memoráveis 🗺️💖, é muito comum visitas técnicas e saídas ao longo do ano, como os teatros organizados pelos professores de Português e História, e outras atividades fora das dependências escolares organizadas pela direção.
+
+
+                </p>
+            </div>
+
+            <section class="v-carousel" aria-label="Carrossel de viagens">
+                <div class="v-viewport" id="carouselViewport">
+                    <!-- slides via JS -->
+                </div>
+
+                <button class="v-nav v-left" id="prevBtn" aria-label="Imagem anterior">‹</button>
+                <button class="v-nav v-right" id="nextBtn" aria-label="Próxima imagem">›</button>
+
+                <div class="v-dots" id="dots" aria-label="Indicador do carrossel"></div>
+            </section>
+
+            <div class="v-card v-summary">
+                <h2 class="v-place" id="tripTitle">—</h2>
+                <p class="v-text" id="tripTeaser">—</p>
+                <button class="v-cta" id="openStoryBtn">Ver história</button>
+            </div>
+        </section>
+
+        <!-- ===== MODAL (overlay + bottom sheet) ===== -->
+        <div class="v-overlay" id="storyOverlay" hidden></div>
+
+        <section class="v-sheet" id="sheet" role="dialog" aria-modal="true" aria-label="História da viagem" hidden>
+            <div class="v-handle" aria-hidden="true"></div>
+
+            <header class="v-sheet-header">
+                <div>
+                    <div class="v-kicker" id="sheetKicker">—</div>
+                    <h3 class="v-sheet-title" id="sheetTitle">—</h3>
+                </div>
+                <button class="v-close" id="closeSheetBtn" aria-label="Fechar">✕</button>
+            </header>
+
+            <p class="v-sheet-text" id="sheetText">—</p>
+
+            <div class="v-mini-gallery" id="miniGallery" aria-label="Galeria de fotos da viagem">
+                <!-- thumbs via JS -->
+            </div>
+
+            <div class="v-sheet-actions">
+                <button class="v-ghost" id="closeSheetBtn2">Fechar</button>
+            </div>
+        </section>
+
+        <!-- ===== IMAGEM EM TELA CHEIA ===== -->
+        <div class="v-img-overlay" id="imgOverlay" hidden>
+            <button class="v-img-close" id="imgCloseBtn" aria-label="Fechar imagem">✕</button>
+            <img id="imgOverlayContent" alt="Imagem da viagem em tela cheia">
+        </div>
+
+        <a id="seta-link" href="arte.html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="seta">
+                <path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" />
+            </svg>
+        </a>
+    </main>
+
+    <script src="viagens.js"></script>
+
+
+
+</body>
+
+
+</html>
