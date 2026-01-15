@@ -21,7 +21,7 @@ function leaf() {
     l.style.setProperty("--r", (Math.random() * 360) + "deg");
     l.style.setProperty("--h", (100 + Math.random() * 40) + "vh");
 
-    l.style.setProperty("--t", (18 + Math.random() * 12) + "s");
+    l.style.setProperty("--t", (15 + Math.random() * 9) + "s");
     l.style.setProperty("--s", (4 + Math.random() * 3) + "s");
 
     l.style.setProperty("--sc", (0.35 + Math.random() * 0.25));
@@ -37,6 +37,7 @@ function leaf() {
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
 
 
 
