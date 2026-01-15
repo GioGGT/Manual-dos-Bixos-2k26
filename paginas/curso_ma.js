@@ -3,8 +3,7 @@ const lc = document.getElementById('leafCont');
 function leaf() {
     const l = document.createElement("img");
     const lowPower =
-  window.matchMedia("(pointer: coarse)").matches ||
-  navigator.hardwareConcurrency <= 4;
+  window.matchMedia("(pointer: coarse)").matches;
     if(lc.children.length > 6 && lowPower){
         setTimeout(leaf, 5000);
         return
@@ -37,6 +36,7 @@ function leaf() {
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
 
 
 
