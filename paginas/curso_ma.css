@@ -258,7 +258,7 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .sobre-img,
+    .sobre-img img,
     .topicos-grid img,
     .evento-content img {
         order: 2;
