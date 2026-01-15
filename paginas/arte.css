@@ -2,7 +2,7 @@
 body{
     background-image: url("imgs/img_arte/fundo.png");
     /*background-size: cover;*/
-    background-repeat: repeat; 
+   /* background-repeat: repeat; */
     background-position: center; 
     overflow-x: hidden;
 }
@@ -166,6 +166,7 @@ body{
     }
 
 }
+
 
 
 
