@@ -5,7 +5,7 @@ function leaf() {
     const lowPower =
   window.matchMedia("(pointer: coarse)").matches ||
   navigator.hardwareConcurrency <= 4;
-    if(lc.children.length > 15 && lowPower){
+    if(lc.children.length > 6 && lowPower){
         setTimeout(leaf, 3000);
         return
     }
@@ -37,6 +37,7 @@ function leaf() {
 }
 
 document.addEventListener("DOMContentLoaded", leaf);
+
 
 
 
