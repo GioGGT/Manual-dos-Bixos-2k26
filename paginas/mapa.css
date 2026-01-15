@@ -57,6 +57,7 @@ header{
 .pink  { background: pink;}
 .gray  { background-color: gray;}
 .green {background-color: rgb(58, 162, 58);}
+.red {background-color: rgb(197, 49, 49);}
 .metro{
     top: 890px;
     left: 20px;
@@ -73,8 +74,8 @@ header{
     height: 80px;
 }
 .hipoP2{
-    left: 60px;
-    width: 15px;
+    left: 56px;
+    width: 18px;
     height: 30px;
 }
 .podi{
@@ -99,6 +100,14 @@ header{
 .pFdsP1{
     width: 90px;
     height: 30px;
+}
+.fatecQ{
+    left: 580px;
+    top: 240px;
+}
+.fatecQP1{
+    width: 150px;
+    height: 180px;
 }
 .cetaUpL{
     left: 618px;
@@ -144,7 +153,7 @@ header{
 }
 .pSouzaP1{
     width: 130px;
-    height: 100px;
+    height: 130px;
 }
 /* PAINEL */
 .info-panel {
