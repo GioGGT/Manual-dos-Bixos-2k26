@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("imgs/img_arte/fundo.png");
+    /*background-image: url("imgs/img_arte/fundo.png");*/
     /*background-size: cover;*/
    background-repeat: no-repeat; 
     background-position: center; 
@@ -166,6 +166,7 @@ body{
     }
 
 }
+
 
 
 
