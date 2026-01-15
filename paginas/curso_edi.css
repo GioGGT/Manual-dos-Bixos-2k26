@@ -83,7 +83,7 @@ section {
 .segunda h1,
 .terceira p,
 .terceira h1 {
-    color: #954723;
+    color: #c05239;
     font-weight: 300;
 }
 
@@ -113,7 +113,10 @@ section {
 
 .terceira {
     background-color: #eee9dede;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     padding: 0;
     margin: 0;
@@ -124,23 +127,7 @@ section {
     text-align: center;
     position: relative;
     z-index: 2;
-    background-color: #954723;
-}
-
-.canto-right {
-    width: 250px;
-    position: absolute;
-    margin: -30px -30px 0px 0px;
-    z-index: 3;
-    right: 0;
-}
-
-.canto-left {
-    width: 250px;
-    position: absolute;
-    margin: -30px 0px 0px -30px;
-    z-index: 3;
-    transform: scaleX(-1);
+    background-color: #c05239;
 }
 
 .main {
@@ -180,26 +167,27 @@ section {
 /* QUARTA PARTE */
 
 .quarta {
-    background-color: #954723;
+    background-color: #c05239;
     position: relative;
 }
 
 #tt-dois {
-    border-bottom: 3px solid #ffee97;
+    border-bottom: 3px solid #efd760;
+    border-top: 3px solid #efd760;
 }
 
 .maior {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 0px;
+    padding: 80px 0px;
     gap: 50px;
     justify-content: center;
     align-items: stretch;
 }
 
 .prof {
-    border: 10px double #ffee97;
-    box-shadow: 0px 0px 10px 5px #612b13;
+    border: 10px double #efd760;
+    box-shadow: 0px 0px 10px 5px #822f1c;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -216,7 +204,7 @@ section {
 }
 
 .foto-prof {
-    box-shadow: 0px 0px 10px 5px #612b13;
+    box-shadow: 0px 0px 10px 5px #822f1c;
     width: 230px;
     height: 230px;
     border-radius: 20px;
@@ -238,8 +226,7 @@ section {
 
 .quinta h1,
 .quinta p {
-    color: #954723;
-}
+    color: #c05239}
 
 .quinta .principal {
     padding: 40px 0px 0px 0px;
@@ -263,17 +250,18 @@ section {
     font-size: clamp(1rem, 4vw, 1.5em);
     color: #eee9de;
     text-decoration: none;
-    background-color: #954723;
+    background-color: #c05239;
+    border-bottom: 4px solid #eee9de;
     padding: 5px 20px 5px 10px;
     border-radius: 10px;
     font-weight: 400;
-    box-shadow: 0px 0px 7px 5px #4a200d7a;
     margin-bottom: 40px;
     transition: 0.3s;
 }
 
 .quinta a:hover {
-    color: #954723;
+    color: #c05239;
+    border-bottom: 2px solid #c05239;
     background-color: #eee9de;
     transform: translateY(-2px);
 }
@@ -287,7 +275,7 @@ section {
     z-index: 0;
     pointer-events: none;
 
-    background-color: #954723;
+    background-color: #c05239;
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.257) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.257) 1px, transparent 1px),
@@ -354,19 +342,6 @@ section {
         margin-top: -20px;
     }
 
-    .canto-left,
-    .canto-right {
-        width: 150px;
-    }
-
-    .canto-left {
-        margin: -20px 0px 0px -20px;
-    }
-
-    .canto-right {
-        margin: -20px -20px 0px 0px;
-    }
-
     .terceira img {
         width: 100%;
     }
@@ -397,6 +372,7 @@ section {
 
     .maior {
         gap: 40px;
+        padding: 35px 0px;
     }
 
     .quinta .imgs {
@@ -418,7 +394,6 @@ section {
         padding: 5px 20px 5px 10px;
         border-radius: 10px;
         font-weight: 400;
-        box-shadow: 0px 0px 5px 4px #5e2d16c4;
         margin-bottom: 20px;
     }
 }
@@ -434,23 +409,10 @@ section {
         width: 100%;
     }
 
-    .canto-left,
-    .canto-right {
-        width: 90px;
-    }
-
-    .canto-left {
-        margin: -10px 0px 0px -10px;
-    }
-
-    .canto-right {
-        margin: -10px -10px 0px 0px;
-    }
-
     .prof {
         width: 70%;
         padding: 20px;
-        border: 7px double #ffee97;
+        border: 7px double #efd760;
     }
 
     .foto-prof {
