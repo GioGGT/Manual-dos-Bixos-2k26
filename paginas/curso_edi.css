@@ -4,11 +4,6 @@ body,
 html {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
-}
-
-body {
-    position: relative;
 }
 
 header {
@@ -44,6 +39,7 @@ section {
 }
 
 .principal {
+    position: relative;
     padding: 40px;
     align-items: center;
     justify-content: center;
@@ -68,17 +64,13 @@ section {
     width: 80%;
 }
 
-.mao {
-    position: absolute;
-    z-index: 2;
-    display: none;
-}
-
 /* SEGUNDA PARTE */
 
 .segunda {
     background-color: #eee9dede;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px 30px;
 }
 
@@ -98,8 +90,6 @@ section {
 .segunda h1,
 .terceira h1 {
     text-align: center;
-    border-top: 2px solid #954723;
-    border-bottom: 2px solid #954723;
 }
 
 .segunda img {
@@ -131,7 +121,6 @@ section {
 
 .titulo {
     padding: 10px;
-    width: 100%;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -234,6 +223,7 @@ section {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border: 3px solid #ffee97;
 }
 
 /* QUINTA */
@@ -282,7 +272,7 @@ section {
     transition: 0.3s;
 }
 
-.quinta a:hover{
+.quinta a:hover {
     color: #954723;
     background-color: #eee9de;
     transform: translateY(-2px);
@@ -327,7 +317,7 @@ section {
 
     .principal {
         flex-direction: column-reverse;
-        margin-top: 150px;
+        margin-top: 80px;
         margin-bottom: 40px;
         padding: 20px;
     }
@@ -347,13 +337,6 @@ section {
 
     .foto img {
         width: 50%;
-    }
-
-    .mao {
-        display: flex;
-        justify-self: end;
-        width: 300px;
-        margin: 80px -80px 0px 0px;
     }
 
     .segunda img {
@@ -413,7 +396,7 @@ section {
     }
 
     .maior {
-        gap: 20px;
+        gap: 40px;
     }
 
     .quinta .imgs {
@@ -442,11 +425,6 @@ section {
 
 @media (max-width: 500px) {
 
-    .mao {
-        width: 250px;
-        margin: 50px -60px 0px 0px;
-    }
-
     .foto img {
         width: 90%;
     }
@@ -470,7 +448,7 @@ section {
     }
 
     .prof {
-        width: 75%;
+        width: 70%;
         padding: 20px;
         border: 7px double #ffee97;
     }
